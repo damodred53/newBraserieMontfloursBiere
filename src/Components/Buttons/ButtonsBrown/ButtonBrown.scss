@@ -1,0 +1,111 @@
+.button-brown {
+  min-width: 20rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: white;
+  background: #c04a22;
+  border: 4px solid white;
+  border-radius: 50px;
+  padding: 15px 40px;
+  position: relative;
+  isolation: isolate;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  outline: 4px solid black;
+  outline-offset: 2px;
+  cursor: pointer;
+  white-space: nowrap;
+
+   &_small {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  &_medium {
+    font-size: 1.3rem;
+    padding: 12px 24px;
+  }
+
+  &_large {
+    font-size: 1.6rem;
+    padding: 16px 32px;
+  }
+}
+
+.button-brown::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 3px solid black;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+@media (max-width: 1100px) {
+  .button-brown {
+    min-width: 15rem;
+    font-size: 1.2rem;
+    
+    &_small {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+
+    &_medium {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+
+    &_large {
+      font-size: 1.2rem;
+      padding: 10px 30px;
+    }
+  } 
+}
+
+@media (max-width: 470px) {
+  .button-brown {
+    min-width: 12rem;
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    
+    &_small {
+      font-size: 0.6rem;
+      padding: 6px 12px;
+    }
+
+    &_medium {
+      font-size: 0.8rem;
+      padding: 8px 16px;
+    }
+
+    &_large {
+      font-size: 1rem;
+      padding: 10px 30px;
+    }
+  } 
+}
+
+@media (max-width: 375px) {
+  .button-brown {
+    min-width: 10rem;
+    font-size: 1rem;
+    padding: 8px 20px;
+    
+    &_small {
+      font-size: 0.5rem;
+      padding: 4px 10px;
+    }
+
+    &_medium {
+      font-size: 0.7rem;
+      padding: 6px 12px;
+    }
+
+    &_large {
+      font-size: 0.9rem;
+      padding: 8px 20px;
+    }
+  }
+  
+}

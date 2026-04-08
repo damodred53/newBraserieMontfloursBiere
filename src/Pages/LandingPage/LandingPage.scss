@@ -1,0 +1,269 @@
+
+.landingPage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__stage {
+        position: relative;
+        width: 50%;
+        height: 100%;
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__button {
+        position: absolute;
+        z-index: 10;
+        
+        &--intro {
+          left: -20%;
+          top: 60%;
+        }
+
+        &--urgent {
+          left: 35%;
+          top: 80%;
+        }
+
+        &--details {
+          left: 90%;
+          top: 60%;
+        }
+    }
+}
+
+@media (max-width: 1550px) {
+  .landingPage {
+    &__button {
+
+        &--intro {
+          left: -30%;
+          top: 60%;
+        }
+
+        &--urgent {
+          left: 30%;
+          top: 80%;
+        }
+
+        &--details {
+          left: 90%;
+          top: 60%;
+        }
+    }
+  }
+}
+
+@media (max-width: 1380px) {
+  .landingPage {
+    &__button {
+        position: absolute;
+        z-index: 10;
+        
+        &--intro {
+          left: -40%;
+          top: 60%;
+        }
+
+        &--urgent {
+          left: 30%;
+          top: 80%;
+        }
+
+        &--details {
+          left: 90%;
+          top: 60%;
+        }
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .landingPage {
+    &__button {
+        position: absolute;
+        z-index: 10;
+        
+        &--intro {
+          left: -38%;
+          top: 60%;
+        }
+
+        &--urgent {
+          left: 22%;
+          top: 80%;
+        }
+
+        &--details {
+          left: 80%;
+          top: 60%;
+        }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .landingPage {
+    &__button {
+        
+        &--intro {
+          left: -25%;
+          top: 60%;
+        }
+
+        &--urgent {
+          left: 28%;
+          top: 75%;
+        }
+
+        &--details {
+          left: 80%;
+          top: 60%;
+        }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .landingPage {
+
+    &__image {
+      width: 120%;
+      max-height: 100vh; 
+      margin-left: -10%;
+    }
+
+    &__button {
+        
+        &--intro {
+          left: -35%;
+          top: 60%;
+        }
+
+        &--urgent {
+          left: 25%;
+          top: 75%;
+        }
+
+        &--details {
+          left: 88%;
+          top: 60%;
+        }
+    }
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .landingPage {
+      &__stage {
+        width: 70%;
+        height: 100vh;
+      }
+
+      &__image {
+          display: block;
+          width: 100%;
+          height: 100%;
+          margin-left: 0%;
+      }
+
+      &__button {
+        &--intro {
+          left: 30%;
+          top: 73%;
+          
+        }
+
+        &--urgent {
+          left: 30%;
+          top: 82%;
+        }
+
+        &--details {
+          left: 30%;
+          top: 90%;
+        }
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .landingPage {
+      &__stage {
+        width: 90%;
+        height: 100vh;
+      }
+  }
+}
+
+@media (max-width: 550px) {
+  .landingPage {
+      &__stage {
+        width: 100%;
+        height: 100vh;
+      }
+  }
+}
+
+@media (max-width: 470px) {
+  .landingPage {
+
+      &__image {
+        width: 100%;
+        height: 100%;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .landingPage {
+    // Centrage général du conteneur
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__stage {
+      width: 100%; // Prend toute la largeur
+      height: 100vh;
+      margin: 0 auto; // Centre horizontalement
+      display: flex;
+      justify-content: center; // Centre l'image horizontalement
+      align-items: center; // Centre l'image verticalement
+    }
+
+    &__image {
+      width: 100%;
+      height: auto; // Conserve les proportions de l'image
+      max-height: 100vh; // Évite que l'image ne dépasse de l'écran
+      object-fit: contain; // Garde l'image entière et centrée
+    }
+
+    // Ajuste les boutons pour qu'ils restent visibles et centrés
+    &__button {
+      &--intro,
+      &--urgent,
+      &--details {
+        left: 50% !important; // Centre horizontalement
+        transform: translateX(-50%); // Ajuste pour un centrage parfait
+        top: auto; // Réinitialise le positionnement vertical
+        bottom: 26%; // Place les boutons en bas de l'écran (ajuste selon tes besoins)
+      }
+      &--urgent {
+        bottom: 18%; // Espacement entre les boutons
+      }
+      &--details {
+        bottom: 10%; // Espacement entre les boutons
+      }
+    }
+  }
+}
+
