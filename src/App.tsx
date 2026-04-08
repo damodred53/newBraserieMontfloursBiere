@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Presentation from './Pages/Presentation/Presentation'
 import History from './Pages/History/History'
@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="wrapper">
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route element={<Layout />} >
