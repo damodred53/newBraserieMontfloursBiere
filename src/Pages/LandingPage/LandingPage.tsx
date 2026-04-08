@@ -2,10 +2,12 @@ import ButtonBrown from "../../Components/Buttons/ButtonsBrown/ButtonBrown";
 import "./LandingPage.scss"
 
 const LandingPage = () => {
+  const landingImageSrc = `${import.meta.env.BASE_URL}assets/images/POST_detoure.png`;
+
   return (
     <div className="landingPage">
       <div className="landingPage__stage">
-        <img className="landingPage__image" src="/assets/images/POST_detoure.png" alt="Landing Page" />
+        <img className="landingPage__image" src={landingImageSrc} alt="Landing Page" />
         <ButtonBrown
           className="landingPage__button landingPage__button--intro"
           content="La BAM en quelques mots"
