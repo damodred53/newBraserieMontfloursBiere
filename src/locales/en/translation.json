@@ -1,0 +1,14 @@
+{
+  "landing": {
+    "title": "Welcome to BAM",
+    "button1": "BAM in a few words",
+    "button2": "A BAM emergency?",
+    "button3": "BAM in more words"
+  },
+  "languageModal": {
+    "title": "Choose a language",
+    "description": "This modal allows you to save your language choice to translate the site.",
+    "cancel": "Cancel",
+    "confirm": "Confirm"
+  }
+}

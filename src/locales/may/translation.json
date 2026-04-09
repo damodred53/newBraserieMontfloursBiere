@@ -1,0 +1,14 @@
+{
+  "landing": {
+    "title": "Bienvenue sur la BAM",
+    "button1": "La BAM sans cabasser",
+    "button2": "La BAM en eun bersille !",
+    "button3": "La BAM qwant pu d'mots"
+  },
+  "languageModal": {
+    "title": "Choisir une langue",
+    "description": "Cette modale permet de mémoriser le choix de langue pour traduire le site.",
+    "cancel": "Annuler",
+    "confirm": "Valider"
+  }
+}

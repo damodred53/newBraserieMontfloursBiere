@@ -39,6 +39,13 @@
     }
 }
 
+.translate_button_landingpage {
+  position: absolute;
+  z-index: 10;
+  left: 125%;
+  bottom: 10%;
+}
+
 @media (max-width: 1550px) {
   .landingPage {
     &__button {
@@ -107,10 +114,22 @@
         }
     }
   }
+
+  .translate_button_landingpage {
+    left: 110%;
+  }
 }
 
 @media (max-width: 1100px) {
   .landingPage {
+
+    &__image {
+        display: block;
+        width: 120%;
+        height: 100%;
+        margin-left: -10%;
+    }
+
     &__button {
         
         &--intro {
@@ -129,6 +148,7 @@
         }
     }
   }
+
 }
 
 @media (max-width: 1000px) {
@@ -160,9 +180,21 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .landingPage {
+
+    &__image {
+      width: 130%;
+      max-height: 100vh; 
+      margin-left: -15%;
+    }
+
+  }
+}
 
 
-@media (max-width: 768px) {
+
+@media (max-width: 770px) {
   .landingPage {
       &__stage {
         width: 70%;
@@ -171,9 +203,8 @@
 
       &__image {
           display: block;
-          width: 100%;
           height: 100%;
-          margin-left: 0%;
+          margin-left: -15%;
       }
 
       &__button {
@@ -194,14 +225,23 @@
         }
     }
   }
+
+  .translate_button_landingpage {
+    left: 90%;
+    width: 10%;
+  }
 }
 
 @media (max-width: 680px) {
   .landingPage {
       &__stage {
-        width: 90%;
+        width: 70%;
         height: 100vh;
       }
+  }
+
+  .translate_button_landingpage {
+    left: -10%;
   }
 }
 
@@ -211,6 +251,16 @@
         width: 100%;
         height: 100vh;
       }
+
+      &__image {
+        object-fit: contain;
+        padding-left: 0%;
+      }
+  }
+
+  .translate_button_landingpage {
+    left: 80%;
+    bottom: 75%;
   }
 }
 
@@ -220,7 +270,13 @@
       &__image {
         width: 100%;
         height: 100%;
+        margin-left: 0%;
     }
+  }
+
+  .translate_button_landingpage {
+    left: 70%;
+    bottom: 68%;
   }
 }
 
@@ -230,6 +286,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 
     &__stage {
       width: 100%; // Prend toute la largeur
@@ -244,7 +301,7 @@
       width: 100%;
       height: auto; // Conserve les proportions de l'image
       max-height: 100vh; // Évite que l'image ne dépasse de l'écran
-      object-fit: contain; // Garde l'image entière et centrée
+      margin-left: 20%;
     }
 
     // Ajuste les boutons pour qu'ils restent visibles et centrés
@@ -264,6 +321,11 @@
         bottom: 10%; // Espacement entre les boutons
       }
     }
+  }
+
+  .translate_button_landingpage {
+    left: -25%;
+    bottom: -45%;
   }
 }
 
