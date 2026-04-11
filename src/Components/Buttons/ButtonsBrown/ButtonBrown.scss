@@ -6,7 +6,7 @@
   min-width: 20rem;
   font-size: 1.5rem;
   font-weight: bold;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: "Comic Sans MS", "Trebuchet MS", cursive, sans-serif;
   color: white;
   background: #c04a22;
   border: 4px solid white;
@@ -194,21 +194,20 @@
 @media (max-width: 375px) {
   .button-brown {
     min-width: 10rem;
-    font-size: 1rem;
     padding: 8px 20px;
     
     &_small {
-      font-size: 0.5rem;
+      font-size: 0.7rem;
       padding: 4px 10px;
     }
 
     &_medium {
-      font-size: 0.7rem;
+      font-size: 0.9rem;
       padding: 6px 12px;
     }
 
     &_large {
-      font-size: 0.9rem;
+      font-size: 1.1rem;
       padding: 8px 20px;
     }
   }

@@ -3,47 +3,26 @@ import ButtonBrown from "../../Components/Buttons/ButtonsBrown/ButtonBrown";
 import landingImage from "../../assets/images/POST_detoure.png";
 import "./LandingPage.scss"
 import TranslateButton from "../../Components/Buttons/TranslateButton/TranslateButton";
-import { Box, Button, Dialog, DialogActions, DialogContent, DialogTitle, FormControlLabel, Modal, Radio, RadioGroup, Stack, Typography } from "@mui/material";
+
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import ModalSelectLanguage from "../../Components/Modal/ModalSelectLanguage/ModalSelectLanguage";
 
-const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
-  p: 4,
-};
 
 type SiteLanguage = "fr" | "en" | "may";
 
-const languageLabels: Record<SiteLanguage, string> = {
-  fr: "Francais",
-  en: "Anglais",
-  may: "Mayennais",
-};
-
 const LandingPage = () => {
 
+
+  const { t } = useTranslation();
   const STORAGE_KEY = "bam-language";
-  const { t, i18n } = useTranslation();
 
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const [selectedLanguage, setSelectedLanguage] = useState<SiteLanguage>(localStorage.getItem(STORAGE_KEY) as SiteLanguage || "fr");
 
-  const handleConfirm = (nextLanguage: SiteLanguage) => {
-    setSelectedLanguage(nextLanguage);
-    setOpen(false);
-    window.localStorage.setItem(STORAGE_KEY, nextLanguage);
-    i18n.changeLanguage(nextLanguage);
-  };
-
+  
 
   const navigate = useNavigate();
 
@@ -78,42 +57,13 @@ const LandingPage = () => {
         <TranslateButton className="translate_button_landingpage" onClick={handleOpen} />
       </div>
 
-      <Modal
+      <ModalSelectLanguage
         open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-        <Box sx={style}>
-            <Dialog open={open} onClose={handleClose} fullWidth maxWidth="xs">
-              <DialogTitle>{t('languageModal.title')}</DialogTitle>
-              <DialogContent>
-                <Stack spacing={2} sx={{ pt: 1 }}>
-                  <Typography variant="body2" color="text.secondary">
-                    {t('languageModal.description')}
-                  </Typography>
-
-                  <RadioGroup
-                    value={selectedLanguage}
-                    onChange={(event) => setSelectedLanguage(event.target.value as SiteLanguage)}
-                  >
-                    <FormControlLabel value="fr" control={<Radio />} label={languageLabels.fr} />
-                    <FormControlLabel value="en" control={<Radio />} label={languageLabels.en} />
-                    <FormControlLabel value="may" control={<Radio />} label={languageLabels.may} />
-                  </RadioGroup>
-                </Stack>
-              </DialogContent>
-              <DialogActions>
-                <Button onClick={handleClose} color="inherit">
-                  {t('languageModal.cancel')}
-                </Button>
-                <Button variant="contained" onClick={() => handleConfirm(selectedLanguage)}>
-                  {t('languageModal.confirm')}
-                </Button>
-              </DialogActions>
-            </Dialog>
-        </Box>
-      </Modal>
+        setOpen={setOpen}
+        handleClose={handleClose}
+        selectedLanguage={selectedLanguage}
+        setSelectedLanguage={(language: string) => setSelectedLanguage(language as SiteLanguage)}
+      />
     </div>
   );
 }
