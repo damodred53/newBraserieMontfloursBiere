@@ -154,6 +154,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &__stage {
+      width: 110%;
+      height: 110%;
+    }
+
+    &__button {
+      &--intro,
+      &--urgent,
+      &--details {
+        left: 50%;
+        right: auto;
+        --button-brown-base-translate-x: -50%;
+        top: auto;
+      }
+
+      &--intro {
+        bottom: 28%;
+      }
+
+      &--urgent {
+        bottom: 20%;
+      }
+
+      &--details {
+        bottom: 12%;
+      }
+    }
   }
 }
 
