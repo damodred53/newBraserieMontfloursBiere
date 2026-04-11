@@ -1,5 +1,5 @@
 import type { ChangeEvent } from "react";
-import { Box, Button, Dialog, DialogActions, DialogContent, DialogTitle, FormControlLabel, Radio, RadioGroup, Stack, Typography } from "@mui/material";
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle, FormControlLabel, Radio, RadioGroup, Stack, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import "./ModalSelectLanguage.scss";
 
