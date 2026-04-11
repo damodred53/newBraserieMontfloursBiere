@@ -1,9 +1,4 @@
 .modal-select-language__paper {
-  position: absolute;
-  top: 25%;
-  left: 15%;
-  transform: translate(-50%, -50%);
-  width: min(400px, calc(100vw - 2rem));
   padding: 1.5rem;
   border: 4px solid #8b4513;
   border-radius: 16px;
@@ -18,7 +13,7 @@
   margin-bottom: 1rem;
   padding: 0;
   color: #8b4513;
-  font-family: "Brush Script MT", cursive;
+  font-family: "Comic Sans MS", "Trebuchet MS", cursive, sans-serif;
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
@@ -64,7 +59,7 @@
 .modal-select-language__option {
   .MuiTypography-root {
     color: #2e8b57;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: "Comic Sans MS", "Trebuchet MS", cursive, sans-serif;
   }
 }
 
@@ -113,13 +108,6 @@
 
   .modal-select-language__title {
     font-size: 1.75rem;
-  }
-
-  .modal-select-language__badge {
-    top: -20px;
-    right: -10px;
-    width: 48px;
-    height: 48px;
   }
 
   .modal-select-language__actions {

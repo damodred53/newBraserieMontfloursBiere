@@ -22,8 +22,6 @@ const LandingPage = () => {
   const handleClose = () => setOpen(false);
   const [selectedLanguage, setSelectedLanguage] = useState<SiteLanguage>(localStorage.getItem(STORAGE_KEY) as SiteLanguage || "fr");
 
-  
-
   const navigate = useNavigate();
 
   return (
