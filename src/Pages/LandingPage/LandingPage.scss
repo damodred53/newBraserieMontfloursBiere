@@ -150,8 +150,10 @@
 
 @media (max-width: 500px) {
   .landingPage {
-    padding-top: 0.25rem;
-    padding-bottom: 0;
+    --landing-page-padding: clamp(0rem, 0vw, 0rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
