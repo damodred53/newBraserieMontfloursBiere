@@ -1,5 +1,5 @@
 .landingPage {
-  --landing-page-padding: clamp(1rem, 2.5vw, 2rem);
+  // --landing-page-padding: clamp(1rem, 2.5vw, 1rem);
   width: 100%;
   height: 100vh;
   padding: var(--landing-page-padding);
@@ -8,12 +8,11 @@
 
   &__stage {
     position: relative;
-    width: min(76vw, calc((100dvh - (var(--landing-page-padding) * 2)) * 0.8));
-    aspect-ratio: 1080 / 1350;
+    // width: min(76vw, calc((100dvh - (var(--landing-page-padding) * 2)) * 0.8));
+    // aspect-ratio: 1080 / 1350;
   }
 
   &__image {
-   
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -56,9 +55,9 @@
 
 @media (max-width: 1100px) {
   .landingPage {
-    &__stage {
-      width: min(88vw, calc((100dvh - (var(--landing-page-padding) * 2)) * 0.8));
-    }
+    // &__stage {
+    //   width: min(88vw, calc((100dvh - (var(--landing-page-padding) * 2)) * 0.8));
+    // }
 
     &__button {
       &--intro {
@@ -92,6 +91,9 @@
 
 @media (max-width: 880px) {
   .landingPage {
+    // &__stage {
+    //   transform: translateY(-1.5rem);
+    // }
 
     &__button {
       &--intro,
@@ -116,7 +118,6 @@
       }
     }
   }
-
 }
 
 @media (max-width: 680px) {
@@ -145,6 +146,7 @@
       }
     }
   }
-
 }
+
+
 
