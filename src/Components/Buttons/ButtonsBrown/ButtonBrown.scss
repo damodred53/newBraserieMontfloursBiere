@@ -1,4 +1,8 @@
 .button-brown {
+  --button-brown-base-translate-x: 0px;
+  --button-brown-base-translate-y: 0px;
+  --button-brown-lift-y: 0px;
+  --button-brown-scale: 1;
   min-width: 20rem;
   font-size: 1.5rem;
   font-weight: bold;
@@ -17,6 +21,7 @@
   white-space: nowrap;
   overflow: hidden;
   transform-origin: center;
+  transform: translateX(var(--button-brown-base-translate-x)) translateY(calc(var(--button-brown-base-translate-y) + var(--button-brown-lift-y))) scale(var(--button-brown-scale));
   transition: transform 220ms ease, box-shadow 220ms ease, background-color 220ms ease;
 
    &_small {
@@ -66,20 +71,12 @@
   z-index: 1;
 }
 
-.button-brown:active {
-  transform: translateY(-1px) scale(0.99);
-  box-shadow: 0 6px 0 #000, 0 10px 18px rgba(0, 0, 0, 0.14);
-}
-
-.button-brown:focus-visible {
-  outline-color: #ffe27a;
-}
-
 .button-brown_animated:hover,
 .button-brown_animated:focus-visible {
+  --button-brown-lift-y: -4px;
+  --button-brown-scale: 1.015;
   background: #d75a2f;
   box-shadow: 0 10px 0 #000, 0 16px 24px rgba(0, 0, 0, 0.17);
-  transform: translateY(-4px) scale(1.015);
   animation: button-brown-glide 340ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -97,13 +94,13 @@
 
 @keyframes button-brown-glide {
   0% {
-    transform: translateY(0) rotate(0deg) scale(1);
+    transform: translateX(var(--button-brown-base-translate-x)) translateY(var(--button-brown-base-translate-y)) rotate(0deg) scale(1);
   }
   45% {
-    transform: translateY(-5px) rotate(-0.6deg) scale(1.02);
+    transform: translateX(var(--button-brown-base-translate-x)) translateY(calc(var(--button-brown-base-translate-y) - 5px)) rotate(-0.6deg) scale(1.02);
   }
   100% {
-    transform: translateY(-4px) rotate(0deg) scale(1.015);
+    transform: translateX(var(--button-brown-base-translate-x)) translateY(calc(var(--button-brown-base-translate-y) - 4px)) rotate(0deg) scale(1.015);
   }
 }
 
@@ -116,7 +113,8 @@
   .button-brown_animated:hover,
   .button-brown_animated:focus-visible {
     animation: none;
-    transform: translateY(-2px);
+    --button-brown-lift-y: -2px;
+    --button-brown-scale: 1;
   }
 
   .button-brown_animated:hover .button-brown__label,
@@ -130,6 +128,28 @@
   .button-brown {
     min-width: 15rem;
     font-size: 1.2rem;
+    
+    &_small {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+
+    &_medium {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+
+    &_large {
+      font-size: 1.2rem;
+      padding: 10px 30px;
+    }
+  } 
+}
+
+@media (max-width: 780px) {
+  .button-brown {
+    width: 13rem;
+    font-size: 1rem;
     
     &_small {
       font-size: 0.8rem;

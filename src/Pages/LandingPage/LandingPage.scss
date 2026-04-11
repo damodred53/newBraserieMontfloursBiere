@@ -1,331 +1,150 @@
-
 .landingPage {
+  --landing-page-padding: clamp(1rem, 2.5vw, 2rem);
+  width: 100%;
+  height: 100vh;
+  padding: var(--landing-page-padding);
+  display: grid;
+  place-items: center;
+
+  &__stage {
+    position: relative;
+    width: min(76vw, calc((100dvh - (var(--landing-page-padding) * 2)) * 0.8));
+    aspect-ratio: 1080 / 1350;
+  }
+
+  &__image {
+   
     width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
+    object-fit: contain;
+  }
 
-    &__stage {
-        position: relative;
-        width: 50%;
-        height: 100%;
+  &__button {
+    position: absolute;
+    z-index: 10;
+
+    &--intro {
+      left: -25%;
+      top: 60%;
     }
 
-    &__image {
-        display: block;
-        width: 100%;
-        height: 100%;
+    &--urgent {
+      left: 30%;
+      top: 75%;
     }
 
-    &__button {
-        position: absolute;
-        z-index: 10;
-        
-        &--intro {
-          left: -20%;
-          top: 60%;
-        }
-
-        &--urgent {
-          left: 35%;
-          top: 80%;
-        }
-
-        &--details {
-          left: 90%;
-          top: 60%;
-        }
+    &--details {
+      right: -25%;
+      top: 60%;
     }
+  }
 }
 
 .translate_button_landingpage {
   position: absolute;
   z-index: 10;
-  left: 125%;
-  bottom: 10%;
+  right: -120%;
+  top: -10%;
 }
 
-@media (max-width: 1550px) {
-  .landingPage {
-    &__button {
-
-        &--intro {
-          left: -30%;
-          top: 60%;
-        }
-
-        &--urgent {
-          left: 30%;
-          top: 80%;
-        }
-
-        &--details {
-          left: 90%;
-          top: 60%;
-        }
-    }
-  }
-}
-
-@media (max-width: 1380px) {
-  .landingPage {
-    &__button {
-        position: absolute;
-        z-index: 10;
-        
-        &--intro {
-          left: -40%;
-          top: 60%;
-        }
-
-        &--urgent {
-          left: 30%;
-          top: 80%;
-        }
-
-        &--details {
-          left: 90%;
-          top: 60%;
-        }
-    }
-  }
-}
-
-@media (max-width: 1150px) {
-  .landingPage {
-    &__button {
-        position: absolute;
-        z-index: 10;
-        
-        &--intro {
-          left: -38%;
-          top: 60%;
-        }
-
-        &--urgent {
-          left: 22%;
-          top: 80%;
-        }
-
-        &--details {
-          left: 80%;
-          top: 60%;
-        }
-    }
-  }
-
+@media (max-width: 1350px) {
   .translate_button_landingpage {
-    left: 110%;
+    left: -25%;
+    top: -10%;
   }
 }
 
 @media (max-width: 1100px) {
   .landingPage {
-
-    &__image {
-        display: block;
-        width: 120%;
-        height: 100%;
-        margin-left: -10%;
-    }
-
-    &__button {
-        
-        &--intro {
-          left: -25%;
-          top: 60%;
-        }
-
-        &--urgent {
-          left: 28%;
-          top: 75%;
-        }
-
-        &--details {
-          left: 80%;
-          top: 60%;
-        }
-    }
-  }
-
-}
-
-@media (max-width: 1000px) {
-  .landingPage {
-
-    &__image {
-      width: 120%;
-      max-height: 100vh; 
-      margin-left: -10%;
-    }
-
-    &__button {
-        
-        &--intro {
-          left: -35%;
-          top: 60%;
-        }
-
-        &--urgent {
-          left: 25%;
-          top: 75%;
-        }
-
-        &--details {
-          left: 88%;
-          top: 60%;
-        }
-    }
-  }
-}
-
-@media (max-width: 1000px) {
-  .landingPage {
-
-    &__image {
-      width: 130%;
-      max-height: 100vh; 
-      margin-left: -15%;
-    }
-
-  }
-}
-
-
-
-@media (max-width: 770px) {
-  .landingPage {
-      &__stage {
-        width: 70%;
-        height: 100vh;
-      }
-
-      &__image {
-          display: block;
-          height: 100%;
-          margin-left: -15%;
-      }
-
-      &__button {
-        &--intro {
-          left: 30%;
-          top: 73%;
-          
-        }
-
-        &--urgent {
-          left: 30%;
-          top: 82%;
-        }
-
-        &--details {
-          left: 30%;
-          top: 90%;
-        }
-    }
-  }
-
-  .translate_button_landingpage {
-    left: 90%;
-    width: 10%;
-  }
-}
-
-@media (max-width: 680px) {
-  .landingPage {
-      &__stage {
-        width: 70%;
-        height: 100vh;
-      }
-  }
-
-  .translate_button_landingpage {
-    left: -10%;
-  }
-}
-
-@media (max-width: 550px) {
-  .landingPage {
-      &__stage {
-        width: 100%;
-        height: 100vh;
-      }
-
-      &__image {
-        object-fit: contain;
-        padding-left: 0%;
-      }
-  }
-
-  .translate_button_landingpage {
-    left: 80%;
-    bottom: 75%;
-  }
-}
-
-@media (max-width: 470px) {
-  .landingPage {
-
-      &__image {
-        width: 100%;
-        height: 100%;
-        margin-left: 0%;
-    }
-  }
-
-  .translate_button_landingpage {
-    left: 70%;
-    bottom: 68%;
-  }
-}
-
-@media (max-width: 440px) {
-  .landingPage {
-    // Centrage général du conteneur
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
     &__stage {
-      width: 100%; // Prend toute la largeur
-      height: 100vh;
-      margin: 0 auto; // Centre horizontalement
-      display: flex;
-      justify-content: center; // Centre l'image horizontalement
-      align-items: center; // Centre l'image verticalement
+      width: min(88vw, calc((100dvh - (var(--landing-page-padding) * 2)) * 0.8));
     }
 
-    &__image {
-      width: 100%;
-      height: auto; // Conserve les proportions de l'image
-      max-height: 100vh; // Évite que l'image ne dépasse de l'écran
-      margin-left: 20%;
-    }
+    &__button {
+      &--intro {
+        left: -10%;
+        top: 61%;
+      }
 
-    // Ajuste les boutons pour qu'ils restent visibles et centrés
+      &--urgent {
+        left: 29%;
+        top: 78%;
+      }
+
+      &--details {
+        right: -10%;
+        top: 61%;
+      }
+    }
+  }
+
+  
+
+}
+
+@media (max-width: 1000px) {
+  .translate_button_landingpage {
+    right: -70%;
+    left: auto;
+    top: -70%;
+  }
+}
+
+@media (max-width: 880px) {
+  .landingPage {
+
     &__button {
       &--intro,
       &--urgent,
       &--details {
-        left: 50% !important; // Centre horizontalement
-        transform: translateX(-50%); // Ajuste pour un centrage parfait
-        top: auto; // Réinitialise le positionnement vertical
-        bottom: 26%; // Place les boutons en bas de l'écran (ajuste selon tes besoins)
+        left: 50%;
+        right: auto;
+        --button-brown-base-translate-x: -50%;
+        top: auto;
       }
+
+      &--intro {
+        bottom: 25%;
+      }
+
       &--urgent {
-        bottom: 18%; // Espacement entre les boutons
+        bottom: 18%;
       }
+
       &--details {
-        bottom: 10%; // Espacement entre les boutons
+        bottom: 11%;
       }
     }
   }
 
-  .translate_button_landingpage {
-    left: -25%;
-    bottom: -45%;
+}
+
+@media (max-width: 680px) {
+  .landingPage {
+
+    &__button {
+      &--intro,
+      &--urgent,
+      &--details {
+        left: 50%;
+        right: auto;
+        --button-brown-base-translate-x: -50%;
+        top: auto;
+      }
+
+      &--intro {
+        bottom: 20%;
+      }
+
+      &--urgent {
+        bottom: 8%;
+      }
+
+      &--details {
+        bottom: -4%;
+      }
+    }
   }
+
 }
 

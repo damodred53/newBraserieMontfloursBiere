@@ -51,27 +51,29 @@ const LandingPage = () => {
     <div className="landingPage">
       <div className="landingPage__stage">
         <img className="landingPage__image" src={landingImage} alt="Landing Page" />
-        <ButtonBrown
-          className="landingPage__button landingPage__button--intro"
-          content={t('landing.button1')}
-          size="medium"
-          isAnimated={true}
-          onClick={() => navigate("/presentation")}
-        />
-        <ButtonBrown
-          className="landingPage__button landingPage__button--urgent"
-          content={t('landing.button2')}
-          size="medium"
-          isAnimated={true}
-          onClick={() => navigate("/urgence")}
-        />
-        <ButtonBrown
-          className="landingPage__button landingPage__button--details"
-          content={t('landing.button3')}
-          size="medium"
-          isAnimated={true}
-          onClick={() => navigate("/details")}
-        />
+
+          <ButtonBrown
+            className="landingPage__button landingPage__button--intro"
+            content={t('landing.button1')}
+            size="medium"
+            isAnimated={true}
+            onClick={() => navigate("/presentation")}
+          />
+          <ButtonBrown
+            className="landingPage__button landingPage__button--urgent"
+            content={t('landing.button2')}
+            size="medium"
+            isAnimated={true}
+            onClick={() => navigate("/urgence")}
+          />
+          <ButtonBrown
+            className="landingPage__button landingPage__button--details"
+            content={t('landing.button3')}
+            size="medium"
+            isAnimated={true}
+            onClick={() => navigate("/details")}
+          />
+
 
         <TranslateButton className="translate_button_landingpage" onClick={handleOpen} />
       </div>
