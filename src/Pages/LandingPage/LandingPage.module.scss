@@ -1,0 +1,156 @@
+.landingPage {
+  --landing-page-padding: clamp(1rem, 2.5vw, 1rem);
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: var(--landing-page-padding);
+}
+
+.stage {
+  position: relative;
+  width: min(76vw, calc((100dvh - (var(--landing-page-padding) * 2)) * 0.8));
+  aspect-ratio: 1080 / 1350;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.button {
+  position: absolute;
+  z-index: 10;
+}
+
+.buttonIntro {
+  left: -25%;
+  top: 60%;
+}
+
+.buttonUrgent {
+  left: 30%;
+  top: 75%;
+}
+
+.buttonDetails {
+  right: -25%;
+  top: 60%;
+}
+
+.translateButton {
+  position: absolute;
+  top: -10%;
+  right: -120%;
+  z-index: 10;
+}
+
+@media (max-width: 1350px) {
+  .translateButton {
+    top: -10%;
+    left: -25%;
+    right: auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  .buttonIntro {
+    left: -10%;
+    top: 61%;
+  }
+
+  .buttonUrgent {
+    left: 29%;
+    top: 78%;
+  }
+
+  .buttonDetails {
+    right: -10%;
+    top: 61%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .translateButton {
+    top: -70%;
+    right: -70%;
+    left: auto;
+  }
+}
+
+@media (max-width: 880px) {
+  .button {
+    top: auto;
+    right: auto;
+    left: 50%;
+    --button-brown-base-translate-x: -50%;
+  }
+
+  .buttonIntro {
+    bottom: 25%;
+  }
+
+  .buttonUrgent {
+    bottom: 18%;
+  }
+
+  .buttonDetails {
+    bottom: 11%;
+  }
+}
+
+@media (max-width: 680px) {
+  .button {
+    top: auto;
+    right: auto;
+    left: 50%;
+    --button-brown-base-translate-x: -50%;
+  }
+
+  .buttonIntro {
+    bottom: 20%;
+  }
+
+  .buttonUrgent {
+    bottom: 8%;
+  }
+
+  .buttonDetails {
+    bottom: -4%;
+  }
+}
+
+@media (max-width: 500px) {
+  .landingPage {
+    --landing-page-padding: clamp(0rem, 0vw, 0rem);
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .stage {
+    width: 110%;
+    height: 110%;
+  }
+
+  .button {
+    top: auto;
+    right: auto;
+    left: 50%;
+    --button-brown-base-translate-x: -50%;
+  }
+
+  .buttonIntro {
+    bottom: 22%;
+  }
+
+  .buttonUrgent {
+    bottom: 14%;
+  }
+
+  .buttonDetails {
+    bottom: 6%;
+  }
+}

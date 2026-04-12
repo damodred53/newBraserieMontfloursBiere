@@ -1,0 +1,216 @@
+.buttonBrown {
+  --button-brown-base-translate-x: 0px;
+  --button-brown-base-translate-y: 0px;
+  --button-brown-lift-y: 0px;
+  --button-brown-scale: 1;
+  min-width: 20rem;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  transform-origin: center;
+  transform: translateX(var(--button-brown-base-translate-x)) translateY(calc(var(--button-brown-base-translate-y) + var(--button-brown-lift-y))) scale(var(--button-brown-scale));
+  transition: transform 220ms ease, box-shadow 220ms ease, background-color 220ms ease;
+  padding: 15px 40px;
+  border: 4px solid white;
+  border-radius: 50px;
+  outline: 4px solid black;
+  outline-offset: 2px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: #c04a22;
+  color: white;
+  font-family: "Comic Sans MS", "Trebuchet MS", cursive, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  white-space: nowrap;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border: 3px solid black;
+    border-radius: inherit;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -35%;
+    left: -20%;
+    z-index: 1;
+    width: 40%;
+    height: 170%;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.24);
+    opacity: 0;
+    transform: rotate(18deg) translateX(-220%);
+    transition: transform 420ms ease, opacity 220ms ease;
+  }
+}
+
+.buttonBrownSmall {
+  padding: 6px 6px;
+  font-size: 1rem;
+}
+
+.buttonBrownMedium {
+  padding: 12px 24px;
+  font-size: 1.3rem;
+}
+
+.buttonBrownLarge {
+  padding: 16px 32px;
+  font-size: 1.6rem;
+}
+
+.buttonBrownLabel {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  transition: transform 220ms ease, letter-spacing 220ms ease;
+}
+
+.buttonBrownAnimated:hover,
+.buttonBrownAnimated:focus-visible {
+  --button-brown-lift-y: -4px;
+  --button-brown-scale: 1.015;
+  background: #d75a2f;
+  box-shadow: 0 10px 0 #000, 0 16px 24px rgba(0, 0, 0, 0.17);
+  animation: buttonBrownGlide 340ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.buttonBrownAnimated:hover::after,
+.buttonBrownAnimated:focus-visible::after {
+  opacity: 1;
+  transform: rotate(18deg) translateX(290%);
+}
+
+.buttonBrownAnimated:hover .buttonBrownLabel,
+.buttonBrownAnimated:focus-visible .buttonBrownLabel {
+  transform: translateY(-1px);
+  letter-spacing: 0.02em;
+}
+
+@keyframes buttonBrownGlide {
+  0% {
+    transform: translateX(var(--button-brown-base-translate-x)) translateY(var(--button-brown-base-translate-y)) rotate(0deg) scale(1);
+  }
+
+  45% {
+    transform: translateX(var(--button-brown-base-translate-x)) translateY(calc(var(--button-brown-base-translate-y) - 5px)) rotate(-0.6deg) scale(1.02);
+  }
+
+  100% {
+    transform: translateX(var(--button-brown-base-translate-x)) translateY(calc(var(--button-brown-base-translate-y) - 4px)) rotate(0deg) scale(1.015);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .buttonBrown,
+  .buttonBrown::after {
+    transition: none;
+  }
+
+  .buttonBrownAnimated:hover,
+  .buttonBrownAnimated:focus-visible {
+    --button-brown-lift-y: -2px;
+    --button-brown-scale: 1;
+    animation: none;
+  }
+
+  .buttonBrownAnimated:hover .buttonBrownLabel,
+  .buttonBrownAnimated:focus-visible .buttonBrownLabel {
+    transform: none;
+    letter-spacing: 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .buttonBrown {
+    min-width: 15rem;
+    font-size: 1.2rem;
+  }
+
+  .buttonBrownSmall {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .buttonBrownMedium {
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+
+  .buttonBrownLarge {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .buttonBrown {
+    width: 13rem;
+    font-size: 1rem;
+  }
+
+  .buttonBrownSmall {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .buttonBrownMedium {
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+
+  .buttonBrownLarge {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .buttonBrown {
+    min-width: 12rem;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+  }
+
+  .buttonBrownSmall {
+    padding: 6px 12px;
+    font-size: 0.7rem;
+  }
+
+  .buttonBrownMedium {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .buttonBrownLarge {
+    padding: 10px 30px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .buttonBrown {
+    min-width: 10rem;
+    padding: 8px 20px;
+  }
+
+  .buttonBrownSmall {
+    padding: 4px 10px;
+    font-size: 0.7rem;
+  }
+
+  .buttonBrownMedium {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+  .buttonBrownLarge {
+    padding: 8px 20px;
+    font-size: 1.1rem;
+  }
+}

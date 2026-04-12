@@ -1,0 +1,47 @@
+
+
+.layout__banner {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-image {
+        width: 100%;
+    }
+
+    &-logo {
+        position: absolute;
+        top: -95%;
+        object-fit: contain;
+        width: 18rem;
+        
+    }
+}
+
+.layout__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    gap: 4.5rem;
+    flex-wrap: wrap;
+}
+
+.layout__button {
+    position: relative;
+}
+
+@media (max-width: 780px) {
+    .layout__content {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 470px) {
+    .layout__content {
+        flex-direction: column;
+    }
+}

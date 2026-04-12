@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import ButtonBrown from "../../Components/Buttons/ButtonsBrown/ButtonBrown";
 import landingImage from "../../assets/images/POST_detoure.png";
-import "./LandingPage.scss"
+import styles from "./LandingPage.module.scss";
 import TranslateButton from "../../Components/Buttons/TranslateButton/TranslateButton";
 
 import { useState } from "react";
@@ -25,26 +25,26 @@ const LandingPage = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="landingPage">
-      <div className="landingPage__stage">
-        <img className="landingPage__image" src={landingImage} alt="Landing Page" />
+    <div className={styles.landingPage}>
+      <div className={styles.stage}>
+        <img className={styles.image} src={landingImage} alt="Landing Page" />
 
           <ButtonBrown
-            className="landingPage__button landingPage__button--intro"
+            className={`${styles.button} ${styles.buttonIntro}`}
             content={t('landing.button1')}
             size="medium"
             isAnimated={true}
             onClick={() => navigate("/presentation")}
           />
           <ButtonBrown
-            className="landingPage__button landingPage__button--urgent"
+            className={`${styles.button} ${styles.buttonUrgent}`}
             content={t('landing.button2')}
             size="medium"
             isAnimated={true}
             onClick={() => navigate("/urgence")}
           />
           <ButtonBrown
-            className="landingPage__button landingPage__button--details"
+            className={`${styles.button} ${styles.buttonDetails}`}
             content={t('landing.button3')}
             size="medium"
             isAnimated={true}
@@ -52,7 +52,7 @@ const LandingPage = () => {
           />
 
 
-        <TranslateButton className="translate_button_landingpage" onClick={handleOpen} />
+        <TranslateButton className={styles.translateButton} onClick={handleOpen} />
       </div>
 
       <ModalSelectLanguage
