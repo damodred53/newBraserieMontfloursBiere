@@ -10,5 +10,16 @@
     "description": "Cette modale permet de mémoriser le choix de langue pour traduire le site.",
     "cancel": "Annuler",
     "confirm": "Valider"
+  },
+  "presentation": {
+    "textBlock": {
+      "bam": {
+        "brasserie": "Deudpi 2009 à Montflours en Mayeune (53) putou que d'brasseu d'lair à tou va, on a c'menceu enteur nous à brasseu, eupi d'un piési, on a ptitment euvolueu pour ratrimeu avec deux commis que ce sé en fermentation haute ou basse, en brassage mono ou multipalieus, blondes, ambreus (eupèce et troube) ou bin brunes, tout ça, ça deupotte des tieuves de la BAM. Eune production eunuit de 400 hectos par eunnées, enteur eurcettes qu'on fait leurs preuves et euxpeurimentations, mé toujous à bâses de matières premières qui v'nant de l'agriculture biologique, la labellisâtion (eurconnaissance de d'part les mètt habiliteux à ça). La labellisation nature et progrès vienn renforceu ceut engagement, en adéquâtion également avec les valeurs du vive ensemble qu'entend deufende la BAM.",
+        "associative": "La BAM à toujou vlu euxpérimenteu, apprende à transmett su le brassage. Su la base de c'te volonteu, eune dynamique colleuctive a éteu lanceu, dans un premier temps sous une forme associative, prolongeu par le pâssage en SCIC, Socieuteu Coopérative d'Inteurêt Collectif, en 2013. Achalandée de 98 socieutèrs, avec un comiteu d'pilotège et un gérant qui rendent compte tous l'zans de la bonne conduite du projet en assembié geunérale.",
+        "montflours": "L'objet de la BAM à toujou éteu la fabricâtion et la vente de bièr biologiques en Mayeune. Les premieus brassins on vu l'jour à Montflours (250 peulrins) et la BAM yé toujou installeu. Participeu aux dynamiques de l'endreu est un leitmotiv. Pour la pu grand part dé r'cettes de la BAM l'orge est produite par des pésanq Mayeunnais et les houblons v'nant d'la reugion."
+    }
+  },
+   "title": "Honneur aux BAMs",
+    "subTitle": "Venez découvrir votre prochaine bière !!"
   }
 }

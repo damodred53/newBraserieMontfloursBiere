@@ -1,0 +1,23 @@
+
+
+.beerButton {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.beerLogo {
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.beerName {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: "Comic Sans MS", "Trebuchet MS", sans-serif;
+    font-style: italic;
+    white-space: nowrap;
+}

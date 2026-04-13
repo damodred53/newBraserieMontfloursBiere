@@ -1,0 +1,57 @@
+[
+    {
+        "id" : 1,
+        "name": "LA BLANCHE",
+        "imagePath" : "logos/Blanche.webp"
+    },
+    {
+        "id" : 2,
+        "name": "L’AMBRÉE",
+        "imagePath" : "logos/Ambree.webp"
+    },
+    {
+        "id" : 3,
+        "name": "LA BLONDE",
+        "imagePath" : "logos/Blonde.webp"
+    },
+    {
+        "id" : 4,
+        "name": "LA BRUNE",
+        "imagePath" : "logos/Brune.webp"
+    },
+    {
+        "id" : 5,
+        "name": "LA TERROIR",
+        "imagePath" : "logos/Terroir.webp"
+    },
+    {
+        "id" : 6,
+        "name": "LA MASQUÉE",
+        "imagePath" : "logos/Masquee.webp"
+    },
+    {
+        "id" : 7,
+        "name": "LA STOUT",
+        "imagePath" : "logos/Stout.webp"
+    },
+    {
+        "id" : 8,
+        "name": "BIÈRE DE MARS",
+        "imagePath" : "logos/Mars.webp"
+    },
+    {
+        "id" : 9,
+        "name": "LA POUSSIN",
+        "imagePath" : "logos/Poussin.webp"
+    },
+    {
+        "id" : 10,
+        "name": "BIÈRE DE NOEL",
+        "imagePath" : "logos/Noel.webp"
+    },
+    {
+        "id" : 11,
+        "name": "LA CERVOISE",
+        "imagePath" : "logos/Cervoise.webp"
+    }
+]
