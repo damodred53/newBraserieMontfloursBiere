@@ -1,5 +1,5 @@
 import styles from "./PresentationVisual.module.scss";
-import verreBamImage from "../../../Assets/Images/verre-BAM.png";
+import verreBamImage from "../../../Assets/images/verre-BAM.png";
 
 const PresentationVisual = () => {
   return (
