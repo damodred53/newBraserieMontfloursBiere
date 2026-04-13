@@ -10,10 +10,10 @@ const PresentationContent = () => {
 
   return (
     <div className={styles.wrapper}>   
-        <BlocText text={t("presentation.textBlock.bam.brasserie")} />
+        <BlocText text={t(["presentation.textBlock.bam.brasserie"])} />
         <BlocText text={t("presentation.textBlock.bam.associative")} />
         <BlocText text={t("presentation.textBlock.bam.montflours")} />
-        <BlocTitle title={t("presentation.title")} />
+        <BlocTitle title={t("presentation.title")} subTitle={t("presentation.subTitle")} />
         {/* <BeerGrid /> */}
     </div>
   );

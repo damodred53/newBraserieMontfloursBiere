@@ -2,13 +2,15 @@ import styles from './BlocTitle.module.scss';
 
 type BlocTitleProps = {
     title: string;
+    subTitle?: string;
     className?: string;
 }
 
-const BlocTitle = ({title, className}: BlocTitleProps) => {
+const BlocTitle = ({title, className, subTitle}: BlocTitleProps) => {
     return (
-        <div className={`${className} ${styles.title}`}>    
-              {title}
+        <div className={`${className}`}>    
+              <h1 className={styles.title}>{title}</h1>
+              {subTitle && <p className={styles.subTitle}>{subTitle}</p>}
         </div>
     );
 }   
