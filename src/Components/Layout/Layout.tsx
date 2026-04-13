@@ -1,4 +1,4 @@
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import bannerImage from "../../assets/images/bannerImage.png";
 import logo from "../../assets/images/logo.png";
 import "./Layout.scss";
@@ -9,6 +9,8 @@ import { t } from "i18next";
 const Layout = () => {
 
   const navigate = useNavigate();
+  const location = useLocation();
+
   return (
     <>   
         <div className="layout__banner">
@@ -17,26 +19,28 @@ const Layout = () => {
         </div>
 
         <div className="layout__content">
+          
           <ButtonBrown
-            className="layout__button layout__button--intro"
+            className={`layout__button layout__button--intro ${location.pathname === "/presentation" ? 'active' : ''}`}
             content={t('landing.button1')}
             size="medium"
             isAnimated={true}
             onClick={() => navigate("/presentation")}
+            
           />
           <ButtonBrown
-            className="layout__button layout__button--urgent"
+            className={`layout__button layout__button--urgent ${location.pathname === "/urgence" ? 'active' : ''}`}
             content={t('landing.button2')}
             size="medium"
             isAnimated={true}
             onClick={() => navigate("/urgence")}
           />
           <ButtonBrown
-            className="layout__button layout__button--details"
+            className={`layout__button layout__button--details ${location.pathname === "/history" ? 'active' : ''}`}
             content={t('landing.button3')}
             size="medium"
             isAnimated={true}
-            onClick={() => navigate("/details")}
+            onClick={() => navigate("/history")}
           />
         </div>
 

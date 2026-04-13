@@ -34,6 +34,15 @@
     position: relative;
 }
 
+.active {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 10px 0 #000, 0 16px 24px rgba(0, 0, 0, 0.17);
+}
+
+.active :global(button) {
+  background: #d75a2f;
+}
+
 @media (max-width: 780px) {
     .layout__content {
         gap: 1rem;

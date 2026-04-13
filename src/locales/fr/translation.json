@@ -10,5 +10,14 @@
     "description": "Cette modale permet de mémoriser le choix de langue pour traduire le site.",
     "cancel": "Annuler",
     "confirm": "Valider"
+  },
+  "presentation": {
+    "textBlock": {
+      "bam": {
+        "brasserie": "Depuis 2009, on brasse de la bière à Montflours en Mayenne (53). D’abord sur le champ du brassage amateur, puis en véritable activité économique avec deux salariés. Que ce soit en fermentation haute ou basse, en brassage mono- ou multipaliers, blondes, ambrées ou brunes sortent des cuves de la BAM. Une production aujourd’hui de 400 hl/an entre recettes ayant fait leurs preuves et expérimentations, mais toujours à base de matières premières issues de l’agriculture biologique. La labellisation Nature et Progrès vient renforcer cet engagement, en adéquation également avec les valeurs sociales qu’entend défendre la BAM.",
+        "associative": "La BAM a toujours voulu expérimenter, apprendre et transmettre sur le brassage. Sur la base de cette volonté, une dynamique collective a été lancée, dans un premier temps, sous forme associative, prolongée par le passage en SCIC, société coopérative d’intérêt collectif, en 2013. Constituée de 98 sociétaires, avec un comité de pilotage et un gérant qui rendent compte chaque année de la bonne conduite du projet en assemblée générale.",
+        "montflours": "L’objet de la BAM a toujours été la fabrication et la vente de bières biologiques en Mayenne. Les premiers brassins ont vu le jour à Montflours (250 hab) et la BAM y est toujours installée. Participer aux dynamiques locales est un leitmotiv. Pour la plus grande part des recettes de la BAM, l’orge est produite par des agriculteurs Mayennais et les houblons viennent de la région."
+      }
+    }
   }
 }

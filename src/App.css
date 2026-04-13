@@ -3,7 +3,6 @@
 /* Vide pour le moment à voir si je complète avec cu css plus tard ici */
 
 .wrapper {
-  min-height: 100vh;
   background-image: url("./assets/test.jpg");
   background-size: cover;
 }
