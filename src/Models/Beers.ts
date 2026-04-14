@@ -5,3 +5,9 @@ export interface Beer {
     name: string;
     imagePath: string;
 }
+
+export interface BeerDetail {
+    name: string;
+    presentation: string;
+    imagePath: string;
+};

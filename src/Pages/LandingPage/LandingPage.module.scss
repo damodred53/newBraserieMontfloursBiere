@@ -126,7 +126,6 @@
 @media (max-width: 500px) {
   .landingPage {
     --landing-page-padding: clamp(0rem, 0vw, 0rem);
-    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,21 +137,25 @@
   }
 
   .button {
-    top: auto;
-    right: auto;
     left: 50%;
     --button-brown-base-translate-x: -50%;
   }
 
   .buttonIntro {
-    bottom: 22%;
+    bottom: 26%;
   }
 
   .buttonUrgent {
-    bottom: 14%;
+    bottom: 18%;
   }
 
   .buttonDetails {
-    bottom: 6%;
+    bottom: 10%;
+  }
+
+  .translateButton {
+    top: -65%;
+    right: -70%;
+    left: auto;
   }
 }
