@@ -7,12 +7,12 @@ import Error from './Pages/Error/Error'
 import LandingPage from './Pages/LandingPage/LandingPage'
 import Layout from './Components/Layout/Layout'
 
-import './App.css'
+import styles from './App.module.scss'
 
 function App() {
 
   return (
-    <div className="wrapper">
+    <div className={styles.wrapper}>
       <Router basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route path="/" element={<LandingPage />} />

@@ -1,28 +1,42 @@
-
-
 .beerButton {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    cursor: pointer;
-    text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateX(4px);
+    .beerName {
+      color: #5a3917; 
+      font-weight: 800; 
+
+    }
+  }
 }
 
 .beerLogo {
-    max-width: 100%;
-    height: 100%;
-    object-fit: contain;
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+
+  .beerButton:hover & {
+    transform: scale(1.05); // Légère augmentation de la taille du logo
+  }
 }
 
 .beerName {
-    font-size: 1.5rem;
-    font-weight: 700;
-    font-family: "Comic Sans MS", "Trebuchet MS", sans-serif;
-    font-style: italic;
-    white-space: nowrap;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Comic Sans MS", "Trebuchet MS", sans-serif;
+  font-style: italic;
+  white-space: nowrap;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
 }

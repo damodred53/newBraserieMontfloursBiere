@@ -1,2 +1,37 @@
 
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+}
+
+.wrapper_presentation_services {
+
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 4rem;
+}
+
+.title {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.subTitle {
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    width: 50%;
+    height: 100%;
+}
+
