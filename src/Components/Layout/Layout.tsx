@@ -1,9 +1,10 @@
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import bannerImage from "../../assets/images/bannerImage.png";
 import logo from "../../assets/images/logo.png";
-import "./Layout.scss";
+import styles from "./Layout.module.scss";
 import ButtonBrown from "../Buttons/ButtonsBrown/ButtonBrown";
 import { t } from "i18next";
+import Footer from "../../Components/CommonComponents/Footer/Footer";
 
 
 const Layout = () => {
@@ -13,30 +14,31 @@ const Layout = () => {
 
   return (
     <>   
-        <div className="layout__banner">
-          <img className="layout__banner-image" src={bannerImage} alt="Banner" />
-          <img className="layout__banner-logo" src={logo} alt="Logo" />
+        <div className={styles.banner}>
+          <img className={styles.bannerImage} src={bannerImage} alt="Banner" />
+          <img className={styles.bannerLogo} src={logo} alt="Logo" />
         </div>
 
-        <div className="layout__content">
+        <div className={styles.content}>
           
           <ButtonBrown
-            className={`layout__button layout__button--intro ${location.pathname === "/presentation" ? 'active' : ''}`}
+            className={`${styles.button} ${location.pathname === "/presentation" ? styles.active : ''}`}
             content={t('landing.button1')}
             size="medium"
             isAnimated={true}
             onClick={() => navigate("/presentation")}
-            
           />
+
           <ButtonBrown
-            className={`layout__button layout__button--urgent ${location.pathname === "/urgence" ? 'active' : ''}`}
+            className={`${styles.button} ${location.pathname === "/urgence" ? styles.active : ''}`}
             content={t('landing.button2')}
             size="medium"
             isAnimated={true}
             onClick={() => navigate("/urgence")}
           />
+          
           <ButtonBrown
-            className={`layout__button layout__button--details ${location.pathname === "/history" ? 'active' : ''}`}
+            className={`${styles.button} ${location.pathname === "/history" ? styles.active : ''}`}
             content={t('landing.button3')}
             size="medium"
             isAnimated={true}
@@ -48,9 +50,7 @@ const Layout = () => {
             <Outlet />
         </main>
 
-        <footer>
-            <p>© 2024 Nouvelle BAM. Tous droits réservés.</p>
-        </footer>
+        <Footer />
     </>
   );
 }   

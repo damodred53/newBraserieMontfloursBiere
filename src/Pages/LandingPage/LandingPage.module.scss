@@ -43,16 +43,16 @@
 
 .translateButton {
   position: absolute;
-  top: -10%;
-  right: -120%;
+  top: 90%;
+  right: -50%;
   z-index: 10;
 }
 
 @media (max-width: 1350px) {
   .translateButton {
-    top: -10%;
-    left: -25%;
-    right: auto;
+    top: 90%;
+    right: -20%;
+    z-index: 10;
   }
 }
 
@@ -75,9 +75,9 @@
 
 @media (max-width: 1000px) {
   .translateButton {
-    top: -70%;
-    right: -70%;
-    left: auto;
+    top: 90%;
+    right: auto;
+    left: -20%;
   }
 }
 
@@ -99,6 +99,13 @@
 
   .buttonDetails {
     bottom: 11%;
+  }
+
+  .translateButton {
+    top: 30%;
+    right: 5%;
+    left: auto;
+    width: 1rem;
   }
 }
 
@@ -154,8 +161,9 @@
   }
 
   .translateButton {
-    top: -65%;
-    right: -70%;
+    top: 35%;
+    right:15%;
     left: auto;
+    width: 1rem;
   }
 }

@@ -1,4 +1,4 @@
-.modal-select-language__paper {
+.paper {
   padding: 1.5rem;
   border: 4px solid #8b4513;
   border-radius: 16px;
@@ -8,7 +8,7 @@
   background-image: radial-gradient(circle at center, #f5d5a2 0%, #e6c28a 100%);
 }
 
-.modal-select-language__title {
+.title {
   position: relative;
   margin-bottom: 1rem;
   padding: 0;
@@ -20,70 +20,53 @@
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.modal-select-language__badge {
-  position: absolute;
-  top: -30px;
-  right: -30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  height: 60px;
-  border: 2px solid #d2b48c;
-  border-radius: 50%;
-  background-color: #8b4513;
-  color: #fff;
-  font-size: 0.8rem;
-  font-weight: 700;
-}
-
-.modal-select-language__content {
+.content {
   margin-top: 0.25rem;
   padding: 1rem !important;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.modal-select-language__description {
+.description {
   color: #556b2f;
   text-align: center;
   font-style: italic;
 }
 
-.modal-select-language__radio-group {
-  .MuiFormControlLabel-root {
+.radioGroup {
+  :global(.MuiFormControlLabel-root) {
     margin-bottom: 0.5rem;
   }
 }
 
-.modal-select-language__option {
-  .MuiTypography-root {
+.option {
+  :global(.MuiTypography-root) {
     color: #2e8b57;
     font-family: "Comic Sans MS", "Trebuchet MS", cursive, sans-serif;
   }
 }
 
-.modal-select-language__radio {
+.radio {
   color: #8b4513 !important;
 
-  &.Mui-checked {
+  &:global(.Mui-checked) {
     color: #8b4513 !important;
   }
 }
 
-.modal-select-language__actions {
+.actions {
   justify-content: center !important;
   gap: 1rem;
   margin-bottom: 1rem;
 }
 
-.modal-select-language__button {
+.button {
   border-radius: 20px !important;
   padding-inline: 1.5rem !important;
   text-transform: none !important;
 }
 
-.modal-select-language__button--cancel {
+.buttonCancel {
   border: 1px solid #8b4513 !important;
   color: #8b4513 !important;
 
@@ -92,7 +75,7 @@
   }
 }
 
-.modal-select-language__button--confirm {
+.buttonConfirm {
   background-color: #8b4513 !important;
   color: #fff !important;
 
@@ -102,15 +85,15 @@
 }
 
 @media (max-width: 480px) {
-  .modal-select-language__paper {
+  .paper {
     padding: 1.25rem;
   }
 
-  .modal-select-language__title {
+  .title {
     font-size: 1.75rem;
   }
 
-  .modal-select-language__actions {
+  .actions {
     gap: 0.75rem;
   }
 }

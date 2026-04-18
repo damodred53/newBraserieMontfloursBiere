@@ -5,12 +5,16 @@ import { useTranslation } from "react-i18next";
 import BlocTitle from "../../BlocTitle/BlocTitle";
 import BeerGrid from "../BeerGrid/BeerGrid";
 
-const PresentationContent = () => {
+type PresentationContentProps = {
+  className: string;
+};
+
+const PresentationContent = ({ className }: PresentationContentProps) => {
 
     const { t } = useTranslation();
 
   return (
-    <div className={styles.wrapper}>   
+    <div className={`${styles.wrapper} ${className}`}>   
         <BlocText text={t(["presentation.textBlock.bam.brasserie"])} />
         <BlocText text={t("presentation.textBlock.bam.associative")} />
         <BlocText text={t("presentation.textBlock.bam.montflours")} />

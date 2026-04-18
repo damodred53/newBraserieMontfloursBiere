@@ -28,7 +28,7 @@
   transition: transform 0.2s ease;
 
   .beerButton:hover & {
-    transform: scale(1.05); // Légère augmentation de la taille du logo
+    transform: scale(1.05); 
   }
 }
 
@@ -39,4 +39,15 @@
   font-style: italic;
   white-space: nowrap;
   transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+
+@media (max-width: 600px) {
+  .beerButton {
+    gap: 0.5rem;
+  }
+
+  .beerName {
+    font-size: 1.2rem;
+  }
 }

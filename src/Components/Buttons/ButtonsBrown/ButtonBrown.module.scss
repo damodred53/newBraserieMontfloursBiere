@@ -126,10 +126,32 @@
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
   .buttonBrown {
     min-width: 15rem;
     font-size: 1.2rem;
+  }
+
+  .buttonBrownSmall {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .buttonBrownMedium {
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+
+  .buttonBrownLarge {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 920px) {
+  .buttonBrown {
+    min-width: 13rem;
+    font-size: 1.1rem;
   }
 
   .buttonBrownSmall {
@@ -155,18 +177,18 @@
   }
 
   .buttonBrownSmall {
-    padding: 6px 12px;
-    font-size: 0.8rem;
+    padding: 6px 15px;
+    font-size: 0.6rem;
   }
 
   .buttonBrownMedium {
-    padding: 8px 16px;
-    font-size: 1rem;
+    padding: 8px 18px;
+    font-size: 0.8rem;
   }
 
   .buttonBrownLarge {
     padding: 10px 30px;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 

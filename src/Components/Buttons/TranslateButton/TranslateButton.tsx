@@ -2,7 +2,7 @@ import './TranslateButton.scss'
 
 type TranslateButtonProps = {
     className?: string;
-    onClick?: () => void;
+    onClick: () => void;
 }
 
 const TranslateButton = ({ className, onClick }: TranslateButtonProps) => {
