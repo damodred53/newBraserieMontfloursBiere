@@ -27,7 +27,6 @@
     padding: 1.5rem 2rem;
     border-radius: 12px;
     width: 50%;
-    height: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -83,7 +82,7 @@
     }
 
     .subTitle {
-        width: 95%;
+        width: 90%;
         padding: 1rem 1.2rem;
     }
 
@@ -95,7 +94,7 @@
 
 @media (max-width: 400px) {
     .subTitle {
-        width: 90%;
+        
         padding: 0.8rem 1rem;
         font-size: 0.9rem;
     }
