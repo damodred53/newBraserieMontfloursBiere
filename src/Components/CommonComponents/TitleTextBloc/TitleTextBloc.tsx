@@ -1,11 +1,12 @@
 
+import type { ReactNode } from "react";
 import styles from "./TitleTextBloc.module.scss";   
 
 
 type TitleTextBlocProps = {
     title: string;
     titleOrientation?: "left" | "middle" | "right";
-    text: string;
+    text: string | ReactNode;
     className?: string;
 }
 

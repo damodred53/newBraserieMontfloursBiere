@@ -1,0 +1,58 @@
+.contactBam {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.logo {
+    width: 4rem;
+    height: 4rem;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.toggle,
+.link, .text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    margin-left: 0.5rem;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    
+}
+
+.toggle {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+}
+
+.toggle:hover,
+.toggle:focus-visible,
+.link:hover,
+.link:focus-visible,
+.text:hover,
+.text:focus-visible {
+    transform: scale(1.05);
+}
+
+.link {
+    color: inherit;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.15em;
+}
