@@ -4,8 +4,11 @@ import stoutLogo from "/logos/Stout.webp";
 import bougerMayenneLogo from "../../../../src/assets/bougerMayenneLogo.png";
 import natureMayenneLogo from "../../../../src/assets/natureProgresLogo.webp";
 import instagramLogo from "../../../../src/assets/instagramLogo.png";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+
+  const { t } = useTranslation();
 
   return (  
     <footer className={styles.footer}>
@@ -24,7 +27,7 @@ const Footer = () => {
               </a>
             </div>
         </div>
-        <Link className={styles.legalLink} to="/legal-notice">Mentions légales</Link>
+        <Link className={styles.legalLink} to="/legal-notice">{t("footer.legalNotice")}</Link>
     </footer>
   );
 }

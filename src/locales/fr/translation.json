@@ -21,5 +21,15 @@
     },
     "title": "Honneur aux BAMs",
     "subTitle": "Venez découvrir votre prochaine bière !!"
+  },
+  "urgence": {
+    "textBlock" : "Vous pouvez retrouver nos produits dans les différents points de vente listés ci-dessous sur la carte. Nous vendons aussi en direct aux marchés de Montlfours (17h30 à 19h) et d'Argentré (17h à 19h30). Pour les commandes, n'hésitez pas à nous contacter. Une urgence BAM ? n'hésitez pas à nous contacter en cliquant par ici : <a href=\"mailto:brasserie.montflours@orange.fr\">contactez-nous</a>",
+    "title": "Une urgence BAM ?",
+    "subtitle": "Nos differents points de vente",
+    "contactLink": "contactez-nous",
+    "clickToSee": "Cliquer pour voir"
+  },
+  "footer" : {
+    "legalNotice": "Mentions légales"
   }
 }

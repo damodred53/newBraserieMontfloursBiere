@@ -3,6 +3,7 @@ import EmailIcon from "../../assets/Icons/MailIcon.png";
 import Masque from "../../assets/Icons/Masque.png";
 import styles from "./ContactBam.module.scss";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 type ContactBamProps = {
     className?: string;
@@ -11,10 +12,12 @@ type ContactBamProps = {
 
 const ContactBam = ({ className, isTelephoneNumber }: ContactBamProps) => {
 
+    const {t} = useTranslation();
+
     const [isDisplayed, setIsDisplayed] = useState(false);
 
-    const phoneDisplay = "06 12 34 56 78";
-    const phoneHref = "+33612345678";
+    const phoneDisplay = "06 01 05 34 56";
+    const phoneHref = "+33601053456";
     const email = "brasserie.montflours@orange.fr";
 
     const handleDisplayData = () => {
@@ -47,7 +50,7 @@ const ContactBam = ({ className, isTelephoneNumber }: ContactBamProps) => {
             <div className={styles.content}>
 
                 <button className={styles.toggle} type="button" onClick={handleDisplayData}>
-                    {isDisplayed ? <img className={styles.logo} src={Masque} alt="masquer" /> : <p className={styles.text}>Cliquer pour voir</p>}
+                    {isDisplayed ? <img className={styles.logo} src={Masque} alt="masquer" /> : <p className={styles.text}>{t("urgence.clickToSee")}</p>}
                 </button>
 
                 <div>

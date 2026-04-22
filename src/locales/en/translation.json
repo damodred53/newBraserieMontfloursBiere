@@ -21,6 +21,16 @@
     },
     "title": "Here's to BAMs",
     "subTitle": "Come discover your next beer!!"
+  },
+  "urgence": {
+    "textBlock" : "You can find our products in the various points of sale listed below on the map. We also sell directly at the Montflours market (5:30 PM to 7 PM) and Argentré market (5 PM to 7:30 PM). For orders, feel free to contact us. A BAM emergency? Don't hesitate to contact us by clicking here: ",
+    "title": "Desperate for a BAM?",
+    "subtitle": "Our different points of sale",
+    "contactLink": "contact us",
+    "clickToSee": "Click to see"
+  },
+  "footer" : {
+    "legalNotice": "Legal Notice"
   }
   
 }
