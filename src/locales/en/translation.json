@@ -29,6 +29,21 @@
     "contactLink": "contact us",
     "clickToSee": "Click to see"
   },
+  "mentionLegale": {
+    "title": "Legal Notice",
+    "text": "The present site <strong>https://www.brasserie-montflours.fr</strong> is the property of the Brasserie Associative de Montflours, a company registered with the Registre du Commerce et des Sociétés de Laval under the number “535 262 703”, whose registered office is located at:",
+    "address": "Zone du Motay route de Sacé 53240 Montflours",
+    "directorTitle": "Director of Publication",
+    "directorText" : "Director of publication of the site brasserie-montlfours.fr: Mr. Cédric SOUFFLET, Manager of the Brasserie Associative de Montflours.",
+    "hostingTitle": "Hosting",
+    "realisationTitle": "Website Development",
+    "realisationText": "Visual identity, label design, and website development of brasserie-montlfours.fr:",
+    "copyrightTitle": "Copyright and/or rights on drawings, photos, and texts",
+    "copyrightText" : "The site brasserie-montlfours.fr constitutes a work of which the Brasserie Associative de Montflours (BAM) is the author within the meaning of articles L.111.1 and following of the Intellectual Property Code.",
+    "copyrightText2": "The photographs, texts, and all works integrated into the content of the site are the property of the Brasserie Associative de Montflours or third parties who have authorized the brewery to use them. Any reproduction, representation, use, or modification, by any process whatsoever and on any medium whatsoever, of all or part of the site, of all or part of the different works that compose it, without obtaining the prior authorization of the Brasserie Associative de Montflours, is strictly prohibited and constitutes an infringement.",
+    "externalLinksTitle": "External Links – Links to other websites",
+    "externalLinksText": "The site brasserie-montlfours.fr may contain hyperlinks to other sites. No commitment regarding these other sites is made: brasserie-montlfours.fr would in no way be responsible for the content, operation, and access of these sites."
+  },
   "footer" : {
     "legalNotice": "Legal Notice"
   }

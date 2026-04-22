@@ -5,10 +5,12 @@
     align-items: center;
     margin-top: 5rem;
     position: relative;
+    padding: 0 1.5rem 6rem;
 }
 
 .titleTextBloc {
     width: 90%;
+    max-width: 120rem;
 }
 
 .subtitle {
@@ -25,6 +27,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 3rem;
+    max-width: 120rem;
 }
 
 .googlemap_frame {
@@ -36,17 +40,17 @@
 }
 
 .contactWrapper {
-    margin-left: 2rem;
-    width : 30%;
+    width: 30%;
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
 }
 
 .text {
-    width: 70%;
+    width: 100%;
     font-size: 2rem;
     font-weight: 700;
-    margin-left: 1rem;
+    margin-left: 0;
     margin-bottom: 2rem;
 }
 
@@ -55,4 +59,62 @@
     bottom: 3rem;
     right: 3rem;
     z-index: 1000;
+}
+
+@media (max-width: 1100px) {
+    .mapWrapper {
+        width: 90%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .googlemap_frame,
+    .contactWrapper {
+        width: 100%;
+    }
+
+    .contactWrapper {
+        align-items: flex-start;
+    }
+
+    .text {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        margin-top: 3rem;
+        padding: 0 1rem 5rem;
+    }
+
+    .titleTextBloc,
+    .mapWrapper {
+        width: 100%;
+    }
+
+    .subtitle {
+        margin-top: 3rem;
+        font-size: clamp(2.6rem, 7vw, 3.4rem);
+        text-align: center;
+    }
+
+    .mapWrapper {
+        margin-top: 3rem;
+        gap: 2rem;
+    }
+
+    .googlemap_frame {
+        height: 24rem;
+        border-width: 5px;
+    }
+
+    .text {
+        font-size: 1.7rem;
+    }
+
+    .translateButton {
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
 }

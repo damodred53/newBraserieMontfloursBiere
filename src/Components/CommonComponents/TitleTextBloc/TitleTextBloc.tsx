@@ -14,7 +14,7 @@ const TitleTextBloc = ({ title, text, titleOrientation = "left", className }: Ti
     return (
         <div className={`${styles.wrapper} ${className || ""}`}>
             <h2 className={`${styles.title} ${styles[`title_${titleOrientation}`]}`}>{title}</h2>
-            <p className={styles.text}>{text}</p>
+            <div className={styles.text}>{text}</div>
         </div>
     );
 }

@@ -1,0 +1,53 @@
+
+.mentions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 5rem;
+    width: 85%;
+    margin-left: 8rem;
+
+}
+
+.mentionsSection {
+    width: 100%;
+}
+
+.mentionsSection p,
+.mentionsSection ul {
+    margin: 0 0 2rem;
+    font-weight: 300;
+}
+
+.mentionsSection ul {
+    padding: 0;
+    list-style: none;
+}
+
+.mentionsSection li {
+    margin-bottom: 0.5rem;
+}
+
+/* Gestion des medias query */
+
+@media(max-width:1100px) {
+
+    .mentions{
+        margin-left: 4rem;
+    }
+}
+
+@media(max-width:600px) {
+
+    .mentionsSection {
+        font-size: 16px;
+    }
+    
+}
+
+@media(max-width:420px) {
+    .mentions{
+        margin-left: 2rem;
+        padding-top: 20rem;
+    }
+}

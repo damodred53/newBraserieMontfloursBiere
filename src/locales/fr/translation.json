@@ -23,11 +23,26 @@
     "subTitle": "Venez découvrir votre prochaine bière !!"
   },
   "urgence": {
-    "textBlock" : "Vous pouvez retrouver nos produits dans les différents points de vente listés ci-dessous sur la carte. Nous vendons aussi en direct aux marchés de Montlfours (17h30 à 19h) et d'Argentré (17h à 19h30). Pour les commandes, n'hésitez pas à nous contacter. Une urgence BAM ? n'hésitez pas à nous contacter en cliquant par ici : <a href=\"mailto:brasserie.montflours@orange.fr\">contactez-nous</a>",
+    "textBlock" : "Vous pouvez retrouver nos produits dans les différents points de vente listés ci-dessous sur la carte. Nous vendons aussi en direct aux marchés de Montlfours (17h30 à 19h) et d'Argentré (17h à 19h30). Pour les commandes, n'hésitez pas à nous contacter. Une urgence BAM ? n'hésitez pas à nous contacter en cliquant par ici : ",
     "title": "Une urgence BAM ?",
     "subtitle": "Nos differents points de vente",
     "contactLink": "contactez-nous",
     "clickToSee": "Cliquer pour voir"
+  },
+  "mentionLegale": {
+    "title": "Mentions légales",
+    "text": "Le présent site https://www.brasserie-montflours.fr est la propriété de la Brasserie Associative de Montflours, établissement immatriculé au Registre du Commerce et des Sociétés de Laval sous le numéro “535 262 703”, dont le siège social est situé :",
+    "address": "Zone du Motay route de Sacé 53240 Montflours",
+    "directorTitle": "Directeur de la publication",
+    "directorText" : "Directeur de la publication du site brasserie-montlfours.fr : Monsieur Cédric SOUFFLET, Gérant de la Brasserie Associative de Montflours.",
+    "hostingTitle": "Hébergement",
+    "realisationTitle": "Réalisation du site",
+    "realisationText": "Identité visuelle, graphisme des étiquettes et développement du site brasserie-montlfours.fr :",
+    "copyrightTitle": "Droits d’auteur et/ou droits sur les dessins, photos et textes",
+    "copyrightText" : "Le site brasserie-montlfours.fr constitue une œuvre dont la Brasserie Associative de Montflours (BAM) est l’auteur au sens des articles L.111.1 et suivant le code de la propriété intellectuelle.",
+    "copyrightText2": "Les photographies, textes, ainsi que toutes œuvres intégrées dans le contenu du site sont la propriété de la Brasserie Associative de Montflours ou de tiers ayant autorisé la brasserie à les utiliser. Toute reproduction, représentation, utilisation ou modification, par quelque procédé que ce soit et sur quelque support que ce soit, de tout ou partie du site, de tout ou partie des différentes oeuvres qui le composent, sans avoir obtenu l’autorisation préalable de la Brasserie Associative de Montflours, est strictement interdite et constitue un délit de contrefaçon.",
+    "externalLinksTitle": "Liens externes – Liens allant vers d’autres sites internet",
+    "externalLinksText": "Le site brasserie-montlfours.fr peut contenir des liens hypertextes allant vers d’autres sites. Aucun engagement concernant ces autres sites n’est pris : brasserie-montlfours.fr ne serait en aucune façon responsable des contenus, fonctionnement et accès de ceux-ci."
   },
   "footer" : {
     "legalNotice": "Mentions légales"
