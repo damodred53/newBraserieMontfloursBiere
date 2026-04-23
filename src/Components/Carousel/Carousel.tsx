@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { useTranslation } from 'react-i18next';
 
-export default () => {
+const Carousel = () => {
 
     const {t} = useTranslation();
 
@@ -35,3 +35,5 @@ export default () => {
     </div>
   );
 };
+
+export default Carousel;
