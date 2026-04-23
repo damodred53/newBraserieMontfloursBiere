@@ -1,10 +1,20 @@
 
+import { useTranslation } from "react-i18next";
+import TitleTextBloc from "../../Components/CommonComponents/TitleTextBloc/TitleTextBloc";
+import styles from "./History.module.scss";
+import Carousel from "../../Components/Carousel/Carousel";
 
 const History = () => {
+
+  const { t } = useTranslation();
+
+
   return (
-    <div>   
-        <h1>Historique de la Nouvelle BAM</h1>
-        <p>Consultez l'histoire de la BAM et autres informations pertinentes.</p>
+    <div className={styles.history}>
+        
+        <TitleTextBloc className={styles.title} titleOrientation="middle" title={t('history.title')} />
+
+        <Carousel />
     </div>
   );
 }

@@ -48,9 +48,8 @@ const LandingPage = () => {
             content={t('landing.button3')}
             size="medium"
             isAnimated={true}
-            onClick={() => navigate("/details")}
+            onClick={() => navigate("/history")}
           />
-
 
         <TranslateButton className={styles.translateButton} onClick={handleOpen} />
       </div>

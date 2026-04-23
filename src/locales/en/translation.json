@@ -5,6 +5,9 @@
     "button2": "A BAM emergency?",
     "button3": "BAM in more words"
   },
+  "translateButton": {
+    "label": "Translate"
+  },
   "languageModal": {
     "title": "Choose a language",
     "description": "This modal allows you to save your language choice to translate the site.",

@@ -5,6 +5,9 @@
     "button2": "Une urgence BAM ?",
     "button3": "La BAM en plus de mots"
   },
+  "translateButton": {
+    "label": "Traduire"
+  },
   "languageModal": {
     "title": "Choisir une langue",
     "description": "Cette modale permet de mémoriser le choix de langue pour traduire le site.",
@@ -28,6 +31,20 @@
     "subtitle": "Nos differents points de vente",
     "contactLink": "contactez-nous",
     "clickToSee": "Cliquer pour voir"
+  },
+  "history": {
+    "title": "La BAM en plus de mots",
+    "texte": {
+        "slide1" : "2009 - Les Origines : A Montflours, une bande de copains s’essaye au brassage amateur dans une cuisine.\n", 
+        "slide2" : "2010 La Pico-brasserie : Création de l’association de la Brasserie Associative de Montflours, avec une quinzaine de membres. Des membres se forment sur le montage d’une brasserie et sur l’utilité sociale. Recettes et tests s’enchainent, et l’idée d’une SCIC (société coopérative d’intérêt collectif) germe, dont l’objet sera la fabrication et la vente de bières biologiques en Mayenne.\n", 
+        "slide3"  :"2012 – Lancement de l’activité : Le projet devient micro-brasserie grâce à une aide de l’Union européenne. C’est le temps des premières : premier emploi de brasseur pour Cédric et première salle de brassage dans un corps de ferme à Mezoué ; premières ventes, premières étiquettes, mais aussi première animation locale avec l’impulsion du marché Au Champ, le vendredi soir à Montflours.\n",
+        "slide4" : "2013 Nouveau cap : achat de nouvelles cuves de fermentation, déménagement de la brasserie dans la salle de traite de la ferme du Fougeray, premiers brassins dans un tank à lait reconverti, labellisation Nature et Progrès, et surtout, passage en SCIC. La BAM, alors constituée de 83 sociétaires, se fixe pour missions l’utilité sociale et l’intérêt collectif autour du territoire rural, l’éducation populaire, la convivialité et le brassage expérimental et artisanal.\n" , 
+        "slide5" : "2015 Au gré des saisons, la BAM installe davantage la filière brassicole dans le décor de Montflours elle acquière 80 plants de houblons.\n ",
+        "slide6" : "2016 Une nouvelle salle de brassage (deux fois plus importante que la précédente) avec fermenteur est achetée.\n ",
+        "slide7" : "2017 Un deuxième brasseur, Pierre, est embauché.\n ",
+        "slide8" : "2019 Un système de consigne est mis en place et 90 % d’orge locale sont utilisés pour brasser.\n", 
+        "slide9" : "2020 – Arrimage à L’Archipel : La brasserie impulse la création d’un bâtiment partagé (rassemblant plusieurs artisans locaux sous forme de SCIC, L’Archipel) sur la zone artisanale locale et s’y installe en septembre 2020.\n Et l’aventure continue !"
+    }
   },
   "mentionLegale": {
     "title": "Mentions légales",
