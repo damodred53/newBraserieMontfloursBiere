@@ -1,18 +1,30 @@
 import { Navigation, Pagination, A11y } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-import styles from "./Carousel.module.scss";
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { useTranslation } from 'react-i18next';
+import styles from "./Carousel.module.scss";
+import InnerCarousel from '../InnerCarousel/InnerCarousel';
+import { useEffect, useState } from 'react';
+import type { Slide } from '../../Models/Slide';
 
 const Carousel = () => {
 
-    const {t} = useTranslation();
+  const [slides, setSlides] = useState<Slide[]>([]);
+
+  useEffect( () => {
+      const fetchData = async () => {
+          const response = await fetch(`${import.meta.env.BASE_URL}/history.json`);
+          const data = await response.json();
+          setSlides(data.slides);
+      };
+      fetchData();
+  }, []);
+
+  console.log(slides);
 
   return (
     <div className={styles.wrapper}>
@@ -27,10 +39,11 @@ const Carousel = () => {
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log('slide change')}
         >
-        <SwiperSlide className={styles.swiperSlide}>{t('history.slide1')}</SwiperSlide>
-        <SwiperSlide className={styles.swiperSlide}>{t('history.slide2')}</SwiperSlide>
-        <SwiperSlide className={styles.swiperSlide}>{t('history.slide3')}</SwiperSlide>
-        <SwiperSlide className={styles.swiperSlide}>{t('history.slide4')}</SwiperSlide>
+          {slides.map((slide, index) => (
+            <SwiperSlide key={index} className={styles.swiperSlide}>
+              <InnerCarousel date={slide?.date} title={slide?.title} text={slide?.text} />
+            </SwiperSlide>
+          ))}
         </Swiper>
     </div>
   );

@@ -1,29 +1,32 @@
 
 .wrapper {
-    background: red;
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
 }
 
 .swiper {
-  width: 70%;
+  --carousel-top-offset: 2.5rem;
+  --swiper-navigation-top-offset: calc(50% + (var(--carousel-top-offset) / 2));
+  width: 80%;
   height: 100%;
+  padding-top: var(--carousel-top-offset);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .swiperSlide {
   border-radius: 12px;
   text-align: center;
-  background-color: blueviolet;
+  background-color: #ab7e7a;
 }
 
 :global(.swiper-button-prev),
 :global(.swiper-button-next) {
   width: 56px;
   height: 56px;
-  top: 50%;
   transform: translateY(-50%);
 }
 

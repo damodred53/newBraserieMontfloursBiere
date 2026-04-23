@@ -1,0 +1,50 @@
+
+.wrapper {
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 3.5rem 1.5rem 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 3px black solid;
+}
+
+.wrapper::after {
+    content: "";
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    border: 3px solid #7a331f;
+    pointer-events: none;
+}
+
+.date {
+    position: absolute;
+    top: -40px;
+    z-index: 2;
+}
+
+.title, .text {
+    color: #7a331f;
+    text-align: center;
+    font-family: "Comic Sans MS", "Trebuchet MS", sans-serif;
+    position: relative;
+    z-index: 1;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 80%;
+    margin-bottom: 1.5rem;
+}
