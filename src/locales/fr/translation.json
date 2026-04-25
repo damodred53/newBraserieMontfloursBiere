@@ -44,6 +44,33 @@
         "slide7" : "2017 Un deuxième brasseur, Pierre, est embauché.\n ",
         "slide8" : "2019 Un système de consigne est mis en place et 90 % d’orge locale sont utilisés pour brasser.\n", 
         "slide9" : "2020 – Arrimage à L’Archipel : La brasserie impulse la création d’un bâtiment partagé (rassemblant plusieurs artisans locaux sous forme de SCIC, L’Archipel) sur la zone artisanale locale et s’y installe en septembre 2020.\n Et l’aventure continue !"
+    },
+    "nature": {
+    "title": "La BAM est diurétique et bonne pour la planète !!",
+    "content": {
+        "paragraph1": "Nous sommes en accord avec pleins de Grands Sujets Planétaires et travaillons sur des réponses locales propres à notre activité :",
+        "list": [
+          "Filères courtes (en achat et vente: vers le 100% Mayenne)",
+          "Bio à 100% et sans OGM",
+          "Zéro déchets (récup des emballages en état, consignes des bouteilles 75 cl et 33cl et réemploi)",
+          "Anti-gaspi",
+          "Démocratie (en SCIC: 1 personne = 1 voix)",
+          "Coopération avec d’autres brasseries et d’autres entreprises.",
+          "Éducation populaire : formations, visites, animations, transmission de savoir,..."
+        ],
+        "paragraph2": "La mention Nature et Progrès valide notre démarche et nous fait progresser. Tout est bien présenté ci-dessous:",
+        "link": {
+          "text": "Aller sur le site officiel"
+        },
+        "image": {
+          "alt": "Logo Nature et Progrès"
+        }
+      }
+    },
+    "concurrence" : {
+        "title" : "QUAND Y’EN A PLUS ICI : Y’EN A AILLEURS",
+        "text" : "Plus de BAM en stock ? Voici les brasseries locales et membres de la BAM : ",
+        "linkProducer" : "Lien vers le site du producteur"
     }
   },
   "mentionLegale": {

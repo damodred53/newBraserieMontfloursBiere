@@ -24,10 +24,9 @@ const Carousel = () => {
       fetchData();
   }, []);
 
-  console.log(slides);
-
   return (
     <div className={styles.wrapper}>
+      {slides.length > 0 &&
         <Swiper
         loop={true}
         className={styles.swiper}
@@ -45,6 +44,7 @@ const Carousel = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+      }
     </div>
   );
 };

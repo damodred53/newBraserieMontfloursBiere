@@ -1,6 +1,6 @@
 
 .wrapper {
-  width: 100%;
+  width: 85%;
   height: 40vh;
   display: flex;
   justify-content: center;
@@ -11,6 +11,10 @@
 .swiper {
   --carousel-top-offset: 2.5rem;
   --swiper-navigation-top-offset: calc(50% + (var(--carousel-top-offset) / 2));
+  --swiper-pagination-color: #7a331f;
+  --swiper-navigation-color: #7a331f;
+  --swiper-navigation-sides-offset: 3rem; 
+  --swiper-navigation-size: 0.1rem;
   width: 80%;
   height: 100%;
   padding-top: var(--carousel-top-offset);

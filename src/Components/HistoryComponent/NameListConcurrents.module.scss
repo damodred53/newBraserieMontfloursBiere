@@ -1,0 +1,30 @@
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 40%;
+    gap: 1rem;
+    margin-top: 3rem;
+    
+}
+
+.concurrentItem {
+    
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.link {
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    margin-left: 2rem;
+}
+
+.link:hover {
+    transform: scale(1.05);
+}

@@ -47,6 +47,29 @@
     "externalLinksTitle": "External Links – Links to other websites",
     "externalLinksText": "The site brasserie-montlfours.fr may contain hyperlinks to other sites. No commitment regarding these other sites is made: brasserie-montlfours.fr would in no way be responsible for the content, operation, and access of these sites."
   },
+  "nature": {
+    "title": "BAM IS DIURETIC AND GOOD FOR THE PLANET!!",
+    "content": {
+        "paragraph1": "We are in agreement with many Great Planetary Issues and are working on local responses specific to our activity:",
+        "list": [
+          "Short supply chains (in purchase and sale: towards 100% Mayenne)",
+          "100% organic and GMO-free",
+
+          "Zero waste (recovery of packaging in good condition, return of 75 cl and 33 cl bottles, and reuse)",
+          "Anti-waste",
+          "Democracy (in SCIC: 1 person = 1 vote)",
+          "Cooperation with other breweries and other companies.",
+          "Popular education: training, visits, activities, knowledge sharing,..."
+        ],
+        "paragraph2": "The Nature et Progrès label validates our approach and helps us progress. Everything is well presented below:",
+        "link": {
+          "text": "Go to the official website"
+        },
+        "image": {
+          "alt": "Nature et Progrès Logo"
+        }
+      }
+    },
   "footer" : {
     "legalNotice": "Legal Notice"
   }
