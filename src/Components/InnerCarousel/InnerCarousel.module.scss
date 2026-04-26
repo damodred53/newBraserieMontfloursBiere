@@ -9,6 +9,7 @@
     align-items: center;
     position: relative;
     border: 3px black solid;
+    
 }
 
 .wrapper::after {
@@ -47,4 +48,56 @@
     font-weight: 700;
     width: 80%;
     margin-bottom: 1.5rem;
+    max-width: 600px;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        padding: 3rem 1rem 1rem;
+        
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .text {
+        font-size: 1.2rem;
+        width: 90%;
+        padding: 0 1rem;
+    }
+
+    .date {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 2.5rem 0.75rem 0.75rem;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .text {
+        font-size: 1rem;
+        width: 95%;
+    }
+
+    .date {
+        top: -40px;
+        font-size: 0.75rem;
+    }
+
+    .text {
+        padding: 0 0.5rem;
+        overflow-y: auto;
+    }
+
+    
 }

@@ -8,6 +8,30 @@
   margin-top: 3rem;
 }
 
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 95%;
+    height: 35vh;
+  }
+
+  .swiper {
+    --swiper-navigation-sides-offset: 0.5rem;
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .swiper {
+    --swiper-navigation-sides-offset: 0.25rem;
+    width: 90%;
+  }
+}
+
 .swiper {
   --carousel-top-offset: 2.5rem;
   --swiper-navigation-top-offset: calc(50% + (var(--carousel-top-offset) / 2));
@@ -37,5 +61,55 @@
 :global(.swiper-button-prev::after),
 :global(.swiper-button-next::after) {
   font-size: 24px;
+}
+
+@media (max-width: 1024px) {
+  :global(.swiper-button-prev),
+  :global(.swiper-button-next) {
+    width: 36px;
+    height: 36px;
+  }
+
+  :global(.swiper-button-prev::after),
+  :global(.swiper-button-next::after) {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  :global(.swiper-button-prev),
+  :global(.swiper-button-next) {
+    width: 24px;
+    height: 24px;
+  }
+
+  :global(.swiper-button-prev::after),
+  :global(.swiper-button-next::after) {
+    font-size: 12px;
+  }
+}
+
+
+
+/* design respnsove */
+
+@media (max-width: 1024px) {
+    .wrapper {
+        width: 95%;
+        height: 35vh;
+    }
+
+    .swiper {
+        --swiper-navigation-sides-offset: 2rem;
+        width: 95%;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    .swiper {
+        --swiper-navigation-sides-offset: 3rem;
+        --swiper-navigation-top-offset: 6rem;
+    }
 }
 

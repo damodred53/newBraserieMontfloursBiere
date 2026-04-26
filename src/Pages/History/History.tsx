@@ -5,6 +5,7 @@ import styles from "./History.module.scss";
 import Carousel from "../../Components/Carousel/Carousel";
 import natureProgresImage from "../../assets/images/natureProgres.png";
 import NameListConcurrents from "../../Components/HistoryComponent/NameListConcurrents";
+import IrregulomadaireBlock from "../../Components/HistoryComponent/IrregulomadaireBlock/Irregulomadaire";
 
 const History = () => {
 
@@ -50,6 +51,10 @@ const History = () => {
         <TitleTextBloc className={styles.natureProgres} titleOrientation="middle" title={t('history.nature.title')} text={<NatureProgres />} />
 
         <TitleTextBloc className={styles.concurrence} titleOrientation="middle" title={t('history.concurrence.title')} text={<NameListConcurrents />} />
+    
+        <TitleTextBloc className={styles.irregulomadaire} titleOrientation="middle" title={t('history.irregulomadaire.title')} />
+
+        <IrregulomadaireBlock />
     </div>
   );
 }

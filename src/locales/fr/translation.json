@@ -68,11 +68,17 @@
       }
     },
     "concurrence" : {
-        "title" : "QUAND Y’EN A PLUS ICI : Y’EN A AILLEURS",
+        "title" : "Quand y'en a plus ici : y'en a ailleurs",
         "text" : "Plus de BAM en stock ? Voici les brasseries locales et membres de la BAM : ",
         "linkProducer" : "Lien vers le site du producteur"
-    }
+    },
+    "irregulomadaire" : {
+        "title" : "Lecture saine : à consommer sans modération et en plus ça coûte rien",
+        "text"  : "Vous pouvez télécharger gratuitement tous les numéros de notre journal en cliquant sur les numéros ci-dessous.",
+        "button": "Numéro {{id}}"
+      }
   },
+  
   "mentionLegale": {
     "title": "Mentions légales",
     "text": "Le présent site https://www.brasserie-montflours.fr est la propriété de la Brasserie Associative de Montflours, établissement immatriculé au Registre du Commerce et des Sociétés de Laval sous le numéro “535 262 703”, dont le siège social est situé :",
