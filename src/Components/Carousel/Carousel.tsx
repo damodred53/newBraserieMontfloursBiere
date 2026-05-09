@@ -10,15 +10,10 @@ import styles from "./Carousel.module.scss";
 import InnerCarousel from '../InnerCarousel/InnerCarousel';
 import { useEffect, useState } from 'react';
 import type { Slide } from '../../Models/Slide';
-import { useTranslation } from 'react-i18next';
 
 const Carousel = () => {
 
-  const { t } = useTranslation();
-
   const [slides, setSlides] = useState<Slide[]>([]);
-
-
 
   useEffect( () => {
       const fetchData = async () => {
