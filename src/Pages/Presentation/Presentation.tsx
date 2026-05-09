@@ -8,8 +8,11 @@ import styles from "./Presentation.module.scss";
 import TranslateButton from "../../Components/Buttons/TranslateButton/TranslateButton";
 import { useState } from "react";
 import ModalSelectLanguage from "../../Components/Modal/ModalSelectLanguage/ModalSelectLanguage";
+import { useTranslation } from "react-i18next";
 
 const Presentation = () => {
+
+  const {t} = useTranslation();
 
   const [open, setOpen] = useState(false);
 
@@ -29,11 +32,11 @@ const Presentation = () => {
         </CommonLayout>
 
         <CommonLayout className={styles.wrapper}> 
-          <BlocTitle title="A votre service !!" className={styles.title} />
+          <BlocTitle title={t("presentation.services.title")} className={styles.title} />
 
           <div className={styles.wrapper_presentation_services}>
-            <TitleTextBloc title="Formation" className={styles.subTitle} text="Le meilleur moyen de comprendre la fabrication de la bière, c’est de la faire ! Nous proposons un atelier de brassage de bière en petit volume. Pendant cette journée dans nos locaux, vous brassez votre propre bière, repartez avec le fermenteur chez vous pour faire le suivi de fermentation et revenez pour le conditionnement 15 jours après. Formation le samedi de 10h à 16h30 sur réservation.Tarif 200€ pour 2 personnes + 35€/personne supplémentaire" />
-            <TitleTextBloc title="Commande de fûts" className={styles.subTitle} text="Nous proposons des fûts en 20 et 30 L pour vos événements : blonde et ambrée toute l'année et autres bières sur commande. Prêt gratuit d'une tireuse et de gobelets, sous réservation. Reprise des fûts non-percutés." />
+            <TitleTextBloc title={t("presentation.services.formationTitle")} className={styles.subTitle} text={t("presentation.services.formation")} />
+            <TitleTextBloc title={t("presentation.services.commandeTitle")} className={styles.subTitle} text={t("presentation.services.commande")} />
           </div>
 
         </CommonLayout>

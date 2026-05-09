@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import styles from "./ButtonBrown.module.scss";
 
 type ButtonBrownProps = {
@@ -9,6 +10,9 @@ type ButtonBrownProps = {
 };
 
 const ButtonBrown = ({ className, content, size, isAnimated = false, onClick }: ButtonBrownProps) => {
+
+  const {t} = useTranslation();
+
   const sizeClassNames = {
     small: styles.buttonBrownSmall,
     medium: styles.buttonBrownMedium,
@@ -24,7 +28,7 @@ const ButtonBrown = ({ className, content, size, isAnimated = false, onClick }: 
 
   return (
     <button className={buttonClassName} onClick={onClick}>
-      <span className={styles.buttonBrownLabel}>{content}</span>
+      <span className={styles.buttonBrownLabel}>{t(content)}</span>
     </button>
   );
 };

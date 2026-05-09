@@ -18,9 +18,29 @@
     margin-top: 4rem;
 }
 
+.nomadeLink {
+    color: inherit;
+    font-weight: 700;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.15em;
+    transition: opacity 0.2s ease;
+}
+
+.nomadeLink:hover,
+.nomadeLink:focus-visible {
+    opacity: 0.7;
+}
+
 .irregulomadaire {
     width: 80%;
     margin-top: 4rem;
+}
+
+.translateButtonWrapper {
+    position: fixed;
+    bottom: 10rem;
+    right: 5rem;
+    z-index: 1000;
 }
 
 @media (max-width: 1024px) {

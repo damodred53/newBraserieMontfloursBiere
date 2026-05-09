@@ -23,14 +23,85 @@
       }
     },
     "title": "Here's to BAMs",
-    "subTitle": "Come discover your next beer!!"
+    "subTitle": "Come discover your next beer!!",
+    "services" : {
+      "title": "Our services",
+      "formation" : "The best way to understand beer making is to make it! We offer a small-scale beer brewing workshop. During this day in our premises, you brew your own beer, take the fermenter home to monitor fermentation, and return for bottling 15 days later. Workshop on Saturdays from 10 AM to 4:30 PM by reservation. Price: €200 for 2 people + €35/person additional",
+      "formationTitle" : "Training",
+      "commandeTitle" : "Keg orders",
+      "commande" : "We offer kegs in 20 and 30 L for your events: blonde and amber all year round and other beers on order. Free loan of a tap and cups, by reservation. Return of non-perforated kegs."
+      }
   },
   "urgence": {
     "textBlock" : "You can find our products in the various points of sale listed below on the map. We also sell directly at the Montflours market (5:30 PM to 7 PM) and Argentré market (5 PM to 7:30 PM). For orders, feel free to contact us. A BAM emergency? Don't hesitate to contact us by clicking here: ",
     "title": "Desperate for a BAM?",
     "subtitle": "Our different points of sale",
     "contactLink": "contact us",
-    "clickToSee": "Click to see"
+    "clickToSee": "Click to see",
+    "contact" : {
+      "question" : "For questions: ",
+      "commande" : "For orders: "
+    }
+  },
+  "history": {
+    "title": "The BAM Story in a Few Words",
+    "texte": {
+        "slide1" : "2009 - The Origins: In Montflours, a group of friends tries their hand at home brewing in a kitchen.\n", 
+        "slide2" : "2010 - The Pico-Brewery: The Brasserie Associative de Montflours association is created, with about fifteen members. Members train in brewery setup and social utility. Recipes and tests follow one after another, and the idea of a SCIC (cooperative society of collective interest) takes root, with the goal of producing and selling organic beers in Mayenne.\n", 
+        "slide3"  :"2012 – Launch of the activity: The project becomes a microbrewery thanks to European Union aid. It's the time of firsts: first employment of a brewer for Cédric and first brewing room in a farm building in Mezoué; first sales, first labels, but also first local animation with the impulse of the Au Champ market, Friday evening in Montflours.\n",
+        "slide4" : "2013 New direction: purchase of new fermentation tanks, relocation of the brewery to the milking room of the Fougeray farm, first brews in a converted milk tank, Nature et Progrès certification, and above all, transition to a SCIC. BAM, then consisting of 83 members, sets its missions as social utility and collective interest around the rural territory, popular education, conviviality, and experimental and artisanal brewing.\n" , 
+        "slide5" : "2015 Over the seasons, BAM further establishes the brewing sector in the Montflours setting, acquiring 80 hop plants.\n ",
+        "slide6" : "2016 A new brewing room (twice as large as the previous one) with a fermenter is purchased.\n ",
+        "slide7" : "2017 A second brewer, Pierre, is hired.\n ",
+        "slide8" : "2019 A deposit system is implemented and 90% of local barley is used for brewing.\n", 
+        "slide9" : "2020 – Integration into L’Archipel: The brewery initiates the creation of a shared building (bringing together several local artisans in the form of a SCIC, L’Archipel) in the local industrial area and moves there in September 2020.\n And the adventure continues!"
+    },    "slides": {
+      "slide1": { "title": "The Origins", "text": "In Montflours, a group of friends tries their hand at home brewing in a kitchen." },
+      "slide2": { "title": "The Pico-Brewery", "text": "The Brasserie Associative de Montflours association is created, with about fifteen members. Members train in brewery setup and social utility. Recipes and tests follow one after another, and the idea of a SCIC (cooperative society of collective interest) takes root, with the goal of producing and selling organic beers in Mayenne." },
+      "slide3": { "title": "Launch of the Activity", "text": "The project becomes a microbrewery thanks to European Union aid. It's the time of firsts: first employment of a brewer for Cédric and first brewing room in a farm building in Mezoué; first sales, first labels, but also first local animation with the impulse of the Au Champ market, Friday evening in Montflours." },
+      "slide4": { "title": "New Direction", "text": "Purchase of new fermentation tanks, relocation of the brewery to the milking room of the Fougeray farm, first brews in a converted milk tank, Nature et Progrès certification, and above all, transition to a SCIC. BAM, then consisting of 83 members, sets its missions as social utility and collective interest around the rural territory, popular education, conviviality, and experimental and artisanal brewing." },
+      "slide5": { "title": "Over the Seasons", "text": "BAM further establishes the brewing sector in the Montflours setting, acquiring 80 hop plants." },
+      "slide6": { "title": "New Brewing Room", "text": "A new brewing room (twice as large as the previous one) with a fermenter is purchased." },
+      "slide7": { "title": "Second Brewer", "text": "A second brewer, Pierre, is hired." },
+      "slide8": { "title": "Deposit System", "text": "A deposit system is implemented and 90% of local barley is used for brewing." },
+      "slide9": { "title": "Mooring at L'Archipel", "text": "The brewery initiates the creation of a shared building (bringing together several local artisans in the form of a SCIC, L'Archipel) in the local industrial area and moves there in September 2020. And the adventure continues!" }
+    },    "nature": {
+    "title": "BAM is diuretic and good for the planet!!",
+    "content": {
+        "paragraph1": "We are in agreement with many Great Planetary Issues and work on local responses specific to our activity:",
+        "list": [
+          "Short supply chains (in purchase and sale: towards 100% Mayenne)",
+          "100% organic and GMO-free",
+
+          "Zero waste (recovery of packaging in good condition, return of 75 cl and 33 cl bottles and reuse)",
+          "Anti-waste",
+          "Democracy (in SCIC: 1 person = 1 vote)",
+          "Cooperation with other breweries and other companies.",
+          "Popular education: training, visits, events, knowledge transfer,..."
+        ],
+        "paragraph2": "The Nature et Progrès label validates our approach and helps us progress. Everything is well presented below:",
+        "link": {
+          "text": "Go to the official website"
+        },
+        "image": {
+          "alt": "Nature et Progrès Logo"
+        }
+      }
+    },
+    "concurrence" : {
+        "title" : "When there's no more here: there's more elsewhere",
+        "text" : "No more BAM in stock? Here are the local breweries and members of BAM: ",
+        "linkProducer" : "Link to the producer's website"
+    },
+    "nomade" : {
+      "title": "Nomadic Collective",
+      "text" : "BAM is part of the NOMADE collective, the turnkey party (BAR - Concert - Catering - DJ SETS). To learn more:"
+    },
+    "irregulomadaire" : {
+        "title" : "Healthy reading: consume without moderation and it costs nothing",
+        "text"  : "You can download all issues of our journal for free by clicking on the issues below.",
+        "button": "Number {{id}}"
+      }
   },
   "mentionLegale": {
     "title": "Legal Notice",

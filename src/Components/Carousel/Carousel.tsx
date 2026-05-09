@@ -10,10 +10,15 @@ import styles from "./Carousel.module.scss";
 import InnerCarousel from '../InnerCarousel/InnerCarousel';
 import { useEffect, useState } from 'react';
 import type { Slide } from '../../Models/Slide';
+import { useTranslation } from 'react-i18next';
 
 const Carousel = () => {
 
+  const { t } = useTranslation();
+
   const [slides, setSlides] = useState<Slide[]>([]);
+
+
 
   useEffect( () => {
       const fetchData = async () => {
@@ -40,7 +45,7 @@ const Carousel = () => {
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index} className={styles.swiperSlide}>
-              <InnerCarousel date={slide?.date} title={slide?.title} text={slide?.text} />
+              <InnerCarousel date={slide?.date} title={`history.slides.slide${index + 1}.title`} text={`history.slides.slide${index + 1}.text`} />
             </SwiperSlide>
           ))}
         </Swiper>

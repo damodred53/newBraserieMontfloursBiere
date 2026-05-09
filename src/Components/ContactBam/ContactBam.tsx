@@ -18,7 +18,8 @@ const ContactBam = ({ className, isTelephoneNumber }: ContactBamProps) => {
 
     const phoneDisplay = "06 01 05 34 56";
     const phoneHref = "+33601053456";
-    const email = "brasserie.montflours@orange.fr";
+    const commandeEmail = "commande@brasserie-montflours.fr";
+    const questionEmail = "contact@brasserie-montflours.fr";
 
     const handleDisplayData = () => {
         setIsDisplayed(!isDisplayed);
@@ -31,9 +32,14 @@ const ContactBam = ({ className, isTelephoneNumber }: ContactBamProps) => {
                     <p className={styles.text}>{phoneDisplay}</p>
                 </a> 
                 : 
-                <a className={styles.link} href={`mailto:${email}`}>
-                    <p className={styles.text}>{email}</p>
+                <div className={styles.emailList}>
+                <a className={styles.link} href={`mailto:${commandeEmail}`}>
+                    <p className={styles.text}>{t("urgence.contact.commande")} <br/>{commandeEmail}</p>
                 </a>
+                <a className={styles.link} href={`mailto:${questionEmail}`}>
+                    <p className={styles.text}>{t("urgence.contact.question")} <br/>{questionEmail}</p>
+                </a>
+                </div>
             )
     }
 
