@@ -3,6 +3,7 @@ import styles from "./BeerGrid.module.scss";
 import BeerButton from "../BeerButton/BeerButton";
 import type { Beer } from "../../../Models/Beers";
 import ModalDisplayBeer from "../../Modal/ModalDisplayBeer/ModalDisplayBeer";
+import BlocTitle from "../../BlocTitle/BlocTitle";
 
 const BeerGrid = () => {
 
@@ -31,8 +32,10 @@ const BeerGrid = () => {
 
     return (
         <>
-            <div className={styles.wrapper}>
+            <div>
+                <div className={styles.wrapper}>
                 {beers.map((beer) => (
+                    beer.isSoft === false &&
                     <BeerButton
                         key={beer.id}
                         logoPath={beer.imagePath}
@@ -40,6 +43,21 @@ const BeerGrid = () => {
                         onClick={() => handleOpenModal(beer)}
                     />
                 ))}
+                </div>
+                <BlocTitle title="Nos boissons sans alcool" className={styles.subTitle} />
+                <div className={styles.wrapper}>
+                    {beers.map((beer) => (
+                    beer.isSoft === true &&
+                    <BeerButton
+                        key={beer.id}
+                        logoPath={beer.imagePath}
+                        name={beer.name}
+                        onClick={() => handleOpenModal(beer)}
+                    />
+                ))}
+                </div>
+                
+                
             </div>
 
             <ModalDisplayBeer

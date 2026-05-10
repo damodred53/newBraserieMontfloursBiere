@@ -118,6 +118,18 @@
         width: 95%;
         margin-top: 2rem;
     }
+
+    .translateButtonWrapper {
+        bottom: 6rem;
+        right: 2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .translateButtonWrapper {
+        bottom: 4rem;
+        right: 1rem;
+    }
 }
 
     

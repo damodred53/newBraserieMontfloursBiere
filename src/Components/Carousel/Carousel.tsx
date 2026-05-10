@@ -40,7 +40,11 @@ const Carousel = () => {
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index} className={styles.swiperSlide}>
-              <InnerCarousel date={slide?.date} title={`history.slides.slide${index + 1}.title`} text={`history.slides.slide${index + 1}.text`} />
+              <InnerCarousel 
+                date={slide?.date} 
+                title={`history.slides.slide${index + 1}.title`} 
+                text={`history.slides.slide${index + 1}.text`} 
+              />
             </SwiperSlide>
           ))}
         </Swiper>

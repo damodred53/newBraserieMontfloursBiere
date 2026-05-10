@@ -53,5 +53,15 @@
         "name": "LA CERVOISE",
         "presentation" : "Blonde atypique, peu alcoolisée,d’inspiration Gallo-Romaine, fermentée avec un levain naturel de boulanger (sans houblon). Acide et rafraîchissante. Elle est brassée à l’occasion de manifestation Gallo-Romaine en Mayenne, sa disponibilité est occasionnelle. Elle est proposée en bouteille 33 cl et 75 cl.",
         "imagePath" : "logos/Cervoise.webp"
+    },
+    {
+        "name": "Citron",
+        "presentation" : "Désaltérante et acidulée, cette boisson pétillante rappelle la saison estivale. Une boisson vive et épurée qui met en avant la fraicheur brute du citron.",
+        "imagePath" : "logos/Citron.png"
+    },
+    {
+        "name": "Ginger beer",
+        "presentation" : "Puissante, fraiche et délicatement relevée. Entre le feu du gingembre, la fraicheur du citron et la douceur d'un soda artisanal",
+        "imagePath" : "logos/Ginger.png"
     }
 ]

@@ -2,47 +2,56 @@
     {
         "id" : 1,
         "name": "LA BLANCHE",
-        "imagePath" : "logos/Blanche.webp"
+        "imagePath" : "logos/Blanche.webp",
+        "isSoft" : false
     },
     {
         "id" : 2,
         "name": "L’AMBRÉE",
-        "imagePath" : "logos/Ambree.webp"
+        "imagePath" : "logos/Ambree.webp",
+        "isSoft" : false
     },
     {
         "id" : 3,
         "name": "LA BLONDE",
-        "imagePath" : "logos/Blonde.webp"
+        "imagePath" : "logos/Blonde.webp",
+        "isSoft" : false
     },
     {
         "id" : 4,
         "name": "LA BRUNE",
-        "imagePath" : "logos/Brune.webp"
+        "imagePath" : "logos/Brune.webp",
+        "isSoft" : false
     },
     {
         "id" : 5,
         "name": "LA TERROIR",
-        "imagePath" : "logos/Terroir.webp"
+        "imagePath" : "logos/Terroir.webp",
+        "isSoft" : false
     },
     {
         "id" : 6,
         "name": "LA MASQUÉE",
-        "imagePath" : "logos/Masquee.webp"
+        "imagePath" : "logos/Masquee.webp",
+        "isSoft" : false
     },
     {
         "id" : 7,
         "name": "LA STOUT",
-        "imagePath" : "logos/Stout.webp"
+        "imagePath" : "logos/Stout.webp",
+        "isSoft" : false
     },
     {
         "id" : 8,
         "name": "BIÈRE DE MARS",
-        "imagePath" : "logos/Mars.webp"
+        "imagePath" : "logos/Mars.webp",
+        "isSoft" : false
     },
     {
         "id" : 9,
         "name": "LA POUSSIN",
-        "imagePath" : "logos/Poussin.webp"
+        "imagePath" : "logos/Poussin.webp",
+        "isSoft" : false
     },
     {
         "id" : 10,
@@ -52,6 +61,19 @@
     {
         "id" : 11,
         "name": "LA CERVOISE",
-        "imagePath" : "logos/Cervoise.webp"
+        "imagePath" : "logos/Cervoise.webp",
+        "isSoft" : false
+    },
+    {
+        "id" : 12,
+        "name": "Citron",
+        "imagePath" : "logos/Citron.png",
+        "isSoft" : true
+    },
+    {
+        "id" : 13,
+        "name": "Ginger beer",
+        "imagePath" : "logos/Ginger.png",
+        "isSoft" : true
     }
 ]

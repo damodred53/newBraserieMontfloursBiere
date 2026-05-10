@@ -79,8 +79,7 @@
 @media (max-width: 768px) {
   :global(.swiper-button-prev),
   :global(.swiper-button-next) {
-    width: 24px;
-    height: 24px;
+   display: none;
   }
 
   :global(.swiper-button-prev::after),
