@@ -3,11 +3,14 @@ import bannerImage from "../../assets/images/bannerImage.png";
 import logo from "../../assets/images/logo.png";
 import styles from "./Layout.module.scss";
 import ButtonBrown from "../Buttons/ButtonsBrown/ButtonBrown";
-import { t } from "i18next";
 import Footer from "../../Components/CommonComponents/Footer/Footer";
+import { useTranslation } from "react-i18next";
+
 
 
 const Layout = () => {
+
+  const { t } = useTranslation();
 
   const navigate = useNavigate();
   const location = useLocation();
