@@ -6,12 +6,9 @@ import ButtonBrown from "../Buttons/ButtonsBrown/ButtonBrown";
 import Footer from "../../Components/CommonComponents/Footer/Footer";
 import { useTranslation } from "react-i18next";
 
-
-
 const Layout = () => {
 
   const { t } = useTranslation();
-
   const navigate = useNavigate();
   const location = useLocation();
 

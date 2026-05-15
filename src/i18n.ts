@@ -19,11 +19,20 @@ const resources = {
   },
 };
 
+const supportedLanguages = ['fr', 'en', 'may'];
+
+const detectLanguage = (): string => {
+  const stored = localStorage.getItem('bam-language');
+  if (stored && supportedLanguages.includes(stored)) return stored;
+  const browserLang = navigator.language?.split('-')[0] ?? 'fr';
+  return supportedLanguages.includes(browserLang) ? browserLang : 'fr';
+};
+
 i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: localStorage.getItem('bam-language') || 'fr', // Langue par défaut
+    lng: detectLanguage(),
     fallbackLng: 'fr', // Langue de repli
     interpolation: {
       escapeValue: false, // Pas besoin d'échapper les valeurs (React le fait déjà)

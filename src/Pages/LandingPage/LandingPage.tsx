@@ -4,9 +4,10 @@ import landingImage from "../../assets/images/POST_detoure.png";
 import styles from "./LandingPage.module.scss";
 import TranslateButton from "../../Components/Buttons/TranslateButton/TranslateButton";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import ModalSelectLanguage from "../../Components/Modal/ModalSelectLanguage/ModalSelectLanguage";
+import ModalMajeur from "../../Components/Modal/ModalMajeur/ModalMajeur";
 
 
 type SiteLanguage = "fr" | "en" | "may";
@@ -18,11 +19,20 @@ const LandingPage = () => {
   const STORAGE_KEY = "bam-language";
 
   const [open, setOpen] = useState(false);
+  const [openModalMajeure, setOpenModalMajeure] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const handleCloseModalMajeure = () => setOpenModalMajeure(false);
+  const handleNoModalMajeure = () => {
+    window.location.href = "https://www.google.com";
+  };
   const [selectedLanguage, setSelectedLanguage] = useState<SiteLanguage>(localStorage.getItem(STORAGE_KEY) as SiteLanguage || "fr");
 
   const navigate = useNavigate();
+
+  useEffect(() => {
+    setOpenModalMajeure(true);
+  }, []);
 
   return (
     <div className={styles.landingPage}>
@@ -61,6 +71,8 @@ const LandingPage = () => {
         selectedLanguage={selectedLanguage}
         setSelectedLanguage={(language: string) => setSelectedLanguage(language as SiteLanguage)}
       />
+
+      <ModalMajeur open={openModalMajeure} onYes={handleCloseModalMajeure} onNo={handleNoModalMajeure} />
     </div>
   );
 }

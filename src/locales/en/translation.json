@@ -8,6 +8,13 @@
   "translateButton": {
     "label": "Translate"
   },
+  "ageModal": {
+    "title": "Are you over 18?",
+    "description": "This site is reserved for adults. Alcohol consumption is dangerous for health, to be consumed in moderation.",
+    "yes": "Yes, I am over 18",
+    "no": "No, I am not of legal age",
+    "footer": "Brasserie Associative de Montflours • Since 2009"
+  },
   "languageModal": {
     "title": "Choose a language",
     "description": "This modal allows you to save your language choice to translate the site.",

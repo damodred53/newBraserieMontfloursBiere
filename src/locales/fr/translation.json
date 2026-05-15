@@ -8,6 +8,13 @@
   "translateButton": {
     "label": "Traduire"
   },
+  "ageModal": {
+    "title": "Avez-vous plus de 18 ans ?",
+    "description": "Ce site est réservé aux personnes majeures. La consommation d'alcool est dangereuse pour la santé, à consommer avec modération.",
+    "yes": "Oui, j'ai plus de 18 ans",
+    "no": "Non, je ne suis pas majeur",
+    "footer": "Brasserie Associative de Montflours • Depuis 2009"
+  },
   "languageModal": {
     "title": "Choisir une langue",
     "description": "Cette modale permet de mémoriser le choix de langue pour traduire le site.",
