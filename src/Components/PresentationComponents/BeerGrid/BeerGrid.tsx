@@ -13,7 +13,7 @@ const BeerGrid = () => {
 
     useEffect(() => {
         const fetchDataBeer = async () => {
-            const response = await fetch(`${import.meta.env.BASE_URL}/dataBeer.json`);   
+            const response = await fetch(`${import.meta.env.BASE_URL}dataBeer.json`);   
             const data = await response.json();
             setBeers(data);
         };
