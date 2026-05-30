@@ -17,7 +17,7 @@ const Carousel = () => {
 
   useEffect( () => {
       const fetchData = async () => {
-          const response = await fetch(`${import.meta.env.BASE_URL}/history.json`);
+          const response = await fetch(`${import.meta.env.BASE_URL}history.json`);
           const data = await response.json();
           setSlides(data.slides);
       };
