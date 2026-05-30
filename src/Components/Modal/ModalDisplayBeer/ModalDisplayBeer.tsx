@@ -36,7 +36,9 @@ const ModalDisplayBeer = ({open, onClose, beer}: ModalDisplayBeerProps) => {
 
     const selectedBeerDetail = beerDetails.find((detailBeer) => detailBeer.name === beer.name);
     const beerVisualPath = selectedBeerDetail?.imagePath ?? beer.imagePath;
-    const beerDescription = selectedBeerDetail?.presentation ?? "Les détails de cette bière seront bientôt disponibles.";
+    const beerDescription = selectedBeerDetail?.translationKey
+        ? t(`beers.${selectedBeerDetail.translationKey}.presentation`, { defaultValue: selectedBeerDetail.presentation })
+        : (selectedBeerDetail?.presentation ?? t("beerDetail.fallback", { defaultValue: "Les détails de cette bière seront bientôt disponibles." }));
 
     return (
         <>

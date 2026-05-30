@@ -150,6 +150,20 @@
     },
   "footer" : {
     "legalNotice": "Legal Notice"
+  },
+  "beers": {
+    "blanche": { "presentation": "Brewed with wheat malt. The beer has lemon notes (kefir, L'Atelier du Ferment) and spicy notes from the yeast. 5-6°. Best served alone or paired with: raw fish, pâté, rillettes, white ham, asparagus, salads, cream-based dishes. Available in 33 cl and 75 cl bottles and in kegs on order." },
+    "ambree": { "presentation": "Smooth at 5.5° with aromas of caramel, biscuit, and low bitterness. Best served alone or paired with: sweet and savory dishes, sauerkraut, grilled fish, cheeses. Available in 33 cl and 75 cl bottles as well as 20 L and 30 L kegs." },
+    "blonde": { "presentation": "Light at 4.5° with a fine and refreshing bitterness. Best served alone or paired with: raw fish, pâté, rillettes, white ham, asparagus, salads, cream-based dishes. Available in 33 cl and 75 cl bottles as well as 20 L and 30 L kegs." },
+    "brune": { "presentation": "Belgian-inspired at 6-7°, with flavors of liquorice wood, caramel, and toasted bread, with a hint of stewed fruit. Best served alone or paired with: spicy dishes, stews, smoked charcuterie, strong cheeses. Available in 33 cl and 75 cl bottles." },
+    "terroir": { "presentation": "A clear summer blonde around 5°, with 100% locally sourced barley and hops and a seasonal yeast. Available in 33 cl and 75 cl bottles." },
+    "masquee": { "presentation": "A surprise beer: changing according to the brewer's inspiration to discover new flavors. Available in 33 cl and 75 cl bottles." },
+    "stout": { "presentation": "Irish-inspired dark beer at 6-7°. Its roasted malts give it notes of coffee and cocoa. Best served alone or paired with: aperitifs, spicy dishes, blue cheeses, chocolate cake. Available in 33 cl and 75 cl bottles." },
+    "mars": { "presentation": "A spring beer with dry hopping that brings citrus-like fruity notes from the hops. Available in 33 cl and 75 cl bottles and in kegs on order." },
+    "poussin": { "presentation": "A copper-toned blonde, triple, Belgian-inspired at 7-8°. Its aromas of honey and candied fruits make it both sweet and strong. Best served alone or paired with: spicy dishes, stews, smoked charcuterie, strong cheeses. Available in 33 cl and 75 cl bottles." },
+    "noel": { "presentation": "A winter beer, different each year, often without spices but with the addition of other cereals (wheat, buckwheat, rye…). Available in 33 cl and 75 cl bottles and in kegs on order." },
+    "cervoise": { "presentation": "An atypical blonde, low-alcohol, Gallo-Roman inspired, fermented with a natural baker's sourdough (without hops). Acidic and refreshing. Brewed on the occasion of Gallo-Roman events in Mayenne, availability is occasional. Available in 33 cl and 75 cl bottles." },
+    "citron": { "presentation": "Refreshing and tangy, this sparkling drink evokes the summer season. A lively and pure drink that highlights the raw freshness of lemon." },
+    "ginger": { "presentation": "Powerful, fresh and delicately spiced. Between the fire of ginger, the freshness of lemon and the sweetness of a craft soda." }
   }
-  
 }

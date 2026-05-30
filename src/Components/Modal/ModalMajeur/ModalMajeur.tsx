@@ -14,6 +14,7 @@ const ModalMajeur = ({ open, onYes, onNo }: ModalMajeurProps) => {
 
     return (
         <Dialog
+        className={styles.dialog}
             open={open}
             onClose={(_event, reason) => {
                 if (reason === "backdropClick" || reason === "escapeKeyDown") return;

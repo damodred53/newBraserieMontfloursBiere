@@ -9,6 +9,7 @@ export interface Beer {
 
 export interface BeerDetail {
     name: string;
+    translationKey?: string;
     presentation: string;
     imagePath: string;
 };

@@ -27,3 +27,9 @@
     grid-auto-rows: 7rem;
   }
 }
+
+@media (max-width: 400px) {
+  .wrapper {
+    grid-auto-rows: 5rem;
+  }
+}

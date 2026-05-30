@@ -128,5 +128,20 @@
   },
   "footer" : {
     "legalNotice": "Mentions légales"
+  },
+  "beers": {
+    "blanche": { "presentation": "Brassée avec du malt de blé. La bière a des notes de citron (kéfir. L'Atelier du Ferment) et des notes épicées apportées par les levures. 5-6°. A servir seule ou avec des plats : poisson cru, pâté, rillettes, jambon blanc, asperges, salade, plats à la crème. Elle est proposée en bouteille 33 cl et 75 cl et en fût sur commande." },
+    "ambree": { "presentation": "Douce à 5,5° avec des arômes de caramel, de biscuit, et peu d'amertume. A servir seule ou avec des plats : Plats sucrés-salés, Choucroute, Poissons grillés, Fromages. Elle est proposée en bouteille 33 cl et 75 cl ainsi qu'en fût de 20 L et 30 L." },
+    "blonde": { "presentation": "Légère à 4,5° avec une amertume fine et désaltérante. A servir seule ou avec des plats : poisson cru, pâté, rillettes, jambon blanc, asperges, salade, plats à la crème. Elle est proposée en bouteille 33 cl et 75 cl ainsi qu'en fût de 20 L et 30 L." },
+    "brune": { "presentation": "D'inspiration belge 6-7°, au goût de bois réglisse, caramel et de pain grillée, avec une légère senteur de fruits cuits. A servir seule ou avec des plats : Plats épicés, Plats en sauce, Charcuterie fumée, Fromages puissants. Elle est proposée en bouteille 33 cl et 75 cl." },
+    "terroir": { "presentation": "Blonde estivale claire environs 5°, avec de l'orge et du houblon 100 % local et une levure de saison. Elle est proposée en bouteille 33 cl et 75 cl." },
+    "masquee": { "presentation": "Bière surprise : changeante selon l'envie du brasseur pour découvrir de nouvelles saveurs. Elle est proposée en bouteille 33 cl et 75 cl." },
+    "stout": { "presentation": "Bière noire d'inspiration irlandaise 6-7°. Ses malts torréfiés lui donnent des notes de café et de cacao. A servir seule ou avec des plats : Apéritifs, Plats épicés, Fromages bleus, Gâteau au chocolat. Elle est proposée en bouteille 33 cl et 75 cl." },
+    "mars": { "presentation": "Bière de printemps, avec un houblonnage à cru qui apporte les notes fruitées type agrume du houblon. Elle est proposée en bouteille 33 cl et 75 cl et en fût sur commande." },
+    "poussin": { "presentation": "Bière blonde cuivrée, triple, d'inspiration belge 7-8°. Ses arômes de miel et de fruits confits en font une bière à la fois douce et forte. A servir seule ou avec des plats : Plats épicés, Plats en sauce, Charcuterie fumée, Fromages puissants. Elle est proposée en bouteille 33 cl et 75 cl." },
+    "noel": { "presentation": "Bière d'hiver, différente chaque année, souvent sans épices mais avec ajout d'autres céréales (blé, sarrasin, seigle…). Elle est proposée en bouteille 33 cl et 75 cl et en fût sur commande." },
+    "cervoise": { "presentation": "Blonde atypique, peu alcoolisée, d'inspiration Gallo-Romaine, fermentée avec un levain naturel de boulanger (sans houblon). Acide et rafraîchissante. Disponibilité occasionnelle. Elle est proposée en bouteille 33 cl et 75 cl." },
+    "citron": { "presentation": "Désaltérante et acidulée, cette boisson pétillante rappelle la saison estivale. Une boisson vive et épurée qui met en avant la fraîcheur brute du citron." },
+    "ginger": { "presentation": "Puissante, fraîche et délicatement relevée. Entre le feu du gingembre, la fraîcheur du citron et la douceur d'un soda artisanal." }
   }
 }
