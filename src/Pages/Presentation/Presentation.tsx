@@ -9,6 +9,7 @@ import TranslateButton from "../../Components/Buttons/TranslateButton/TranslateB
 import { useState } from "react";
 import ModalSelectLanguage from "../../Components/Modal/ModalSelectLanguage/ModalSelectLanguage";
 import { useTranslation } from "react-i18next";
+import KegOrderContent from "../../Components/PresentationComponents/KegOrderContent/KegOrderContent";
 
 const Presentation = () => {
 
@@ -36,7 +37,12 @@ const Presentation = () => {
 
           <div className={styles.wrapper_presentation_services}>
             <TitleTextBloc title={t("presentation.services.formationTitle")} className={styles.subTitle} text={t("presentation.services.formation")} />
-            <TitleTextBloc title={t("presentation.services.commandeTitle")} className={styles.subTitle} text={t("presentation.services.commande")} />
+            <TitleTextBloc
+              title={t("presentation.services.commandeTitle")}
+              className={styles.subTitle}
+            >
+              <KegOrderContent />
+            </TitleTextBloc>
           </div>
 
         </CommonLayout>

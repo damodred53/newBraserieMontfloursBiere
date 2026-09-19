@@ -27,10 +27,12 @@ const History = () => {
   return (
     <div className={styles.history}>
         <TitleTextBloc className={styles.title} titleOrientation="middle" title={t('history.title')} />
+        <TitleTextBloc className={styles.nomade} titleOrientation="middle" title={t('history.nomade.title')} text={<Nomade />} />
         <Carousel />
+        
         <TitleTextBloc className={styles.natureProgres} titleOrientation="middle" title={t('history.nature.title')} text={<NatureProgres />} />
         <TitleTextBloc className={styles.concurrence} titleOrientation="middle" title={t('history.concurrence.title')} text={<NameListConcurrents />} />
-        <TitleTextBloc className={styles.nomade} titleOrientation="middle" title={t('history.nomade.title')} text={<Nomade />} />
+        
         <TitleTextBloc className={styles.irregulomadaire} titleOrientation="middle" title={t('history.irregulomadaire.title')}  />
         <IrregulomadaireBlock />
 

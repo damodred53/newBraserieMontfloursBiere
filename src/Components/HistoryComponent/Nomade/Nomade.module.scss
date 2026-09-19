@@ -1,18 +1,32 @@
 
-.nomade {
-    width: 80%;
-    margin-top: 3rem;
+.wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 3rem;
+    gap: 0.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: #000;
+
+    p {
+        margin: 0;
+    }
 }
 
+.learnMore {
+    text-align: center;
+    gap: 0.5rem;
+}
 
 .link {
-    transition: opacity 0.2s ease;
+    display: inline-block;
+    color: inherit;
+    text-underline-offset: 0.2em;
+    transition: color 0.2s ease, transform 0.2s ease, text-shadow 0.2s ease;
 }
 
-.link:hover {
-    opacity: 0.7;
+.link:hover,
+.link:focus-visible {
+    color: #7a3f00;
+    transform: translateY(-2px);
+    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
 }

@@ -19,7 +19,7 @@ const Footer = () => {
               <a href="https://www.bouger-en-mayenne.com" target="_blank" rel="noopener noreferrer">
                 <img className={styles.social} src={bougerMayenneLogo} alt="Bouger Mayenne Logo" />
               </a>
-              <a href="" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/bam.brasserie/" target="_blank" rel="noopener noreferrer">
                 <img className={styles.social} src={instagramLogo} alt="Instagram Logo" />
               </a>
               <a href="https://www.natureetprogres.org" target="_blank" rel="noopener noreferrer">

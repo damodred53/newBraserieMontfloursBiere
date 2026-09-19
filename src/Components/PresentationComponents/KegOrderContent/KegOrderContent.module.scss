@@ -1,0 +1,36 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    p,
+    ul {
+        margin: 0;
+    }
+
+    ul {
+        display: grid;
+        gap: 0.8rem;
+        padding-left: 2.4rem;
+    }
+}
+
+.emphasis {
+    font-style: italic;
+}
+
+.sectionTitle,
+.outro {
+    margin-top: 0.4rem !important;
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        gap: 0.75rem;
+
+        ul {
+            gap: 0.6rem;
+            padding-left: 1.8rem;
+        }
+    }
+}

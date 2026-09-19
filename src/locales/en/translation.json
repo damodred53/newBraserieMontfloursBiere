@@ -36,7 +36,20 @@
       "formation" : "The best way to understand beer making is to make it! We offer a small-scale beer brewing workshop. During this day in our premises, you brew your own beer, take the fermenter home to monitor fermentation, and return for bottling 15 days later. Workshop on Saturdays from 10 AM to 4:30 PM by reservation. Price: €200 for 2 people + €35/person additional",
       "formationTitle" : "Training",
       "commandeTitle" : "Keg orders",
-      "commande" : "We offer kegs in 20 and 30 L for your events: blonde and amber all year round and other beers on order. Free loan of a tap and cups, by reservation. Return of non-perforated kegs."
+      "commande" : {
+        "intro": "We offer 20 and 30 L kegs for your events:",
+        "beers": {
+          "available": "Blonde, Terroir and Amber available all year round",
+          "onOrder": "Other beers available to order"
+        },
+        "optionsTitle": "Equipment and options:",
+        "options": {
+          "tap": "Loan of beer taps and cups, subject to reservation",
+          "return": "Return of unopened kegs",
+          "rental": "Rental of marquees and bars"
+        },
+        "outro": "Bar service available for your private and public events."
+      }
       }
   },
   "urgence": {
@@ -102,7 +115,8 @@
     },
     "nomade" : {
       "title": "Nomadic Collective",
-      "text" : "BAM is part of the NOMADE collective, the turnkey party (BAR - Concert - Catering - DJ SETS). To learn more:"
+      "text" : "BAM is part of the NOMADE collective, the turnkey party (BAR - Concert - Catering - DJ SETS).",
+      "learnMore": "To learn more:"
     },
     "irregulomadaire" : {
         "title" : "Healthy reading: consume without moderation and it costs nothing",

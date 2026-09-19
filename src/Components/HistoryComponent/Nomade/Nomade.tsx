@@ -5,10 +5,13 @@ import styles from "./Nomade.module.scss";
 const Nomade = () => {
 
     return (
-        <>
-            {t('history.nomade.text')}{" "}
-            <a className={styles.nomadeLink} href="https://nomadeguinguette.fr/" target="_blank" rel="noopener noreferrer"><p className={styles.link}>nomadeguinguette.fr</p></a>
-        </>
+        <div className={styles.wrapper}>
+            <p>{t('history.nomade.text')}</p>
+            <p className={styles.learnMore}>
+                <span>{t('history.nomade.learnMore')}</span>
+                <a className={styles.link} href="https://nomadeguinguette.fr/" target="_blank" rel="noopener noreferrer">nomadeguinguette.fr</a>
+            </p>
+        </div>
     )
 }
 
