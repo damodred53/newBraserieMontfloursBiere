@@ -8,12 +8,14 @@ import LandingPage from './Pages/LandingPage/LandingPage'
 import Layout from './Components/Layout/Layout'
 import styles from './App.module.scss'
 import MentionLegale from './Pages/MentionLegale/MentionLegale'
+import MatomoAnalytics from './Components/MatomoAnalytics/MatomoAnalytics'
 
 function App() {
 
   return (
     <div className={styles.wrapper}>
       <Router basename={import.meta.env.BASE_URL}>
+        <MatomoAnalytics />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route element={<Layout />} >

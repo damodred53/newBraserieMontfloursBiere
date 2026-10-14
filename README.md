@@ -1,5 +1,12 @@
 # React + TypeScript + Vite
 
+## Matomo sur OVH
+
+Le suivi Matomo des pages et le choix de consentement sont integres, mais restent
+desactives sans configuration. L'installation serveur OVH, la configuration de
+confidentialite et l'activation du build sont detaillees dans
+[le guide Matomo OVH](docs/MATOMO_OVH.md).
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

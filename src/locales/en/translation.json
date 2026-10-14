@@ -1,4 +1,9 @@
 {
+  "analytics": {
+    "privacyTitle": "Audience measurement and privacy",
+    "privacyText": "With your consent, the Brasserie Associative de Montflours uses Matomo to measure visits, pages viewed, referral sources and technical device characteristics. This tracking does not set analytics cookies. URL query parameters and fragments are not sent by this integration.",
+    "choiceText": "Your choice is stored in your browser for 6 months. You can decline or withdraw your consent at any time using Privacy settings, without restricting access to the site. Withdrawal stops new measurements but does not automatically erase data already collected. For requests concerning your data, contact the brewery using the contact details provided on this site."
+  },
   "landing": {
     "title": "Welcome to BAM",
     "button1": "BAM in a few words",

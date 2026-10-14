@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import TitleTextBloc from "../../Components/CommonComponents/TitleTextBloc/TitleTextBloc";
 import styles from "./MentionLegale.module.scss";
+import { matomoEnabled } from "../../Services/matomo";
 
 const MentionLegale = () => {
 
@@ -87,6 +88,16 @@ const MentionLegale = () => {
                     </p>
                 }
             />
+            {matomoEnabled && <TitleTextBloc
+                className={styles.mentionsSection}
+                title={t("analytics.privacyTitle", { defaultValue: "Mesure d'audience et confidentialit\u00e9" })}
+                text={
+                    <>
+                        <p>{t("analytics.privacyText", { defaultValue: "Avec votre accord, la Brasserie Associative de Montflours utilise Matomo pour mesurer les visites, les pages consult\u00e9es, leur provenance et les caract\u00e9ristiques techniques des appareils. Ce suivi ne d\u00e9pose pas de cookies de mesure d'audience. Les param\u00e8tres et fragments des URL ne sont pas envoy\u00e9s par cette int\u00e9gration." })}</p>
+                        <p>{t("analytics.choiceText", { defaultValue: "Votre choix est enregistr\u00e9 dans votre navigateur pendant 6 mois. Vous pouvez refuser ou retirer votre accord \u00e0 tout moment avec le bouton Confidentialit\u00e9, sans limiter l'acc\u00e8s au site. Le retrait arr\u00eate les nouvelles mesures mais n'efface pas automatiquement les donn\u00e9es d\u00e9j\u00e0 collect\u00e9es. Pour toute demande relative \u00e0 vos donn\u00e9es, contactez la brasserie aux coordonn\u00e9es indiqu\u00e9es sur ce site." })}</p>
+                    </>
+                }
+            />}
         </div>
 
     )

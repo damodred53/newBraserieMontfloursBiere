@@ -1,0 +1,55 @@
+.banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1100;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 24px;
+  border-top: 2px solid #606c38;
+  background: #fff;
+  color: #222;
+  max-height: 45dvh;
+  overflow-y: auto;
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.message {
+  flex: 1 1 280px;
+  min-width: 0;
+
+  p { margin: 0 0 8px; }
+  a { color: #364c28; text-decoration: underline; }
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.actions button,
+.preferences {
+  padding: 8px 12px;
+  border: 1px solid #606c38;
+  border-radius: 4px;
+  background: #fff;
+  color: #222;
+  font: inherit;
+  cursor: pointer;
+
+  &:hover { background: #edf1e9; }
+  &:focus-visible { outline: 2px solid #364c28; outline-offset: 2px; }
+}
+
+.preferences {
+  position: fixed;
+  bottom: 8px;
+  left: 8px;
+  z-index: 1100;
+  font-size: 12px;
+}
