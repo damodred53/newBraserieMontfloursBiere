@@ -16,12 +16,15 @@ const PresentationContent = ({ className }: PresentationContentProps) => {
 
   return (
     <div className={`${styles.wrapper} ${className}`}>
-      <BlocText text={t("presentation.textBlock.bam.brasserie")} />
+      <BlocText
+        className={`${styles.intro} ${expanded ? styles.introExpanded : ""}`}
+        text={t("presentation.textBlock.bam.brasserie")}
+      />
       <div className={`${styles.extraBlocks} ${expanded ? styles.expanded : ""}`}>
         <BlocText text={t("presentation.textBlock.bam.associative")} />
         <BlocText text={t("presentation.textBlock.bam.montflours")} />
       </div>
-      <button className={styles.toggleButton} onClick={() => setExpanded((prev) => !prev)}>
+      <button className={styles.toggleButton} aria-expanded={expanded} onClick={() => setExpanded((prev) => !prev)}>
         {expanded ? "Voir moins…" : "Voir plus…"}
       </button>
       <BlocTitle title={t("presentation.title")} subTitle={t("presentation.subTitle")} />

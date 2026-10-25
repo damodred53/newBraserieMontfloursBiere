@@ -8,12 +8,17 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import styles from "./Carousel.module.scss";
 import InnerCarousel from '../InnerCarousel/InnerCarousel';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import type { Swiper as SwiperInstance } from 'swiper';
+import { useTranslation } from 'react-i18next';
 import type { Slide } from '../../Models/Slide';
 
 const Carousel = () => {
 
   const [slides, setSlides] = useState<Slide[]>([]);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const swiperRef = useRef<SwiperInstance | null>(null);
+  const { t } = useTranslation();
 
   useEffect( () => {
       const fetchData = async () => {
@@ -33,10 +38,14 @@ const Carousel = () => {
         modules={[Navigation, Pagination, A11y]}
         spaceBetween={50}
         slidesPerView={1}
+        breakpoints={{
+          0: { autoHeight: false, spaceBetween: 16 },
+          500: { autoHeight: false, spaceBetween: 50 },
+        }}
         navigation
         pagination={{ clickable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}
+        onSwiper={(swiper) => { swiperRef.current = swiper; }}
+        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index} className={styles.swiperSlide}>
@@ -49,6 +58,32 @@ const Carousel = () => {
           ))}
         </Swiper>
       }
+      {slides.length > 0 && (
+        <div className={styles.controls}>
+          <div className={styles.controlRow}>
+            <button
+              type="button"
+              aria-label={t("history.carousel.previous")}
+              onClick={() => swiperRef.current?.slidePrev()}
+            >
+              <span aria-hidden="true">←</span>
+            </button>
+            <output aria-live="polite" aria-atomic="true">
+              {t("history.carousel.position", { current: activeIndex + 1, total: slides.length })}
+            </output>
+            <button
+              type="button"
+              aria-label={t("history.carousel.next")}
+              onClick={() => swiperRef.current?.slideNext()}
+            >
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+          <div className={styles.progress} aria-hidden="true">
+            <span style={{ width: `${((activeIndex + 1) / slides.length) * 100}%` }} />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

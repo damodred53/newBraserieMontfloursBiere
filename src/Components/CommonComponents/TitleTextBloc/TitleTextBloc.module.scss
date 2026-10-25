@@ -46,3 +46,25 @@
         padding:1rem;
     }
 }
+
+@media (width < 500px) {
+    .title {
+        padding: 0;
+        margin-bottom: 1rem;
+        font: 700 1.5rem / 1.25 Georgia, "Times New Roman", serif;
+        color: #3b2418;
+        text-align: left;
+        overflow-wrap: anywhere;
+    }
+
+    .text {
+        font: inherit;
+        color: #3b2418;
+        overflow-wrap: anywhere;
+
+        a {
+            text-decoration: underline;
+            text-underline-offset: 0.2em;
+        }
+    }
+}

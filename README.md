@@ -1,5 +1,25 @@
 # React + TypeScript + Vite
 
+## Presentation mobile
+
+Les ajustements graphiques mobiles sont limites a la media query
+`(width < 500px)` dans les styles des composants. A partir de 500 px,
+la presentation existante est conservee. Le mobile utilise un menu compact,
+des cartes de bieres, un carrousel historique tactile et des coordonnees directement visibles.
+Le carrousel mobile dispose de fleches, d'un compteur et d'une barre de progression ;
+ses cartes partagent la hauteur du texte le plus long pour garder les commandes
+fixes pendant la navigation, sans tronquer les textes. La banniere mobile reprend
+le decor de feuilles de houblon de la version grand ecran, avec un leger debordement
+des feuilles et du logo agrandi ; un espace reserve les separe du contenu.
+Le decor couvre le haut de l'ecran dans une zone independante du menu ;
+la navigation s'ouvre sous les feuilles, sans recouvrir le logo.
+Les textes courts du carrousel sont centres et affiches en plus grand.
+Les numeros du journal
+sont disposes sur deux colonnes. Le fond illustre d'origine est conserve
+avec un voile creme pour faciliter la lecture.
+Pour comparer, lancer `npm run dev` et verifier notamment les largeurs
+320, 390, 499, 500 et 501 px. L'accueil reste defilable sur les ecrans peu hauts.
+
 ## Matomo sur OVH
 
 Le suivi Matomo des pages et le choix de consentement sont integres, mais restent

@@ -22,3 +22,20 @@
         font-size: 1.5rem;
     }
 }
+
+@media (width < 500px) {
+    .badge {
+        width: auto;
+        padding: 0.2rem 0.75rem;
+        border: none;
+        border-radius: 999px;
+        box-shadow: none;
+        background: #f3e5cc;
+        color: #8a3218;
+        font-size: 0.875rem;
+    }
+
+    .number {
+        font-family: "Trebuchet MS", Arial, sans-serif;
+    }
+}

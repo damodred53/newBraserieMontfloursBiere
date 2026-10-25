@@ -104,3 +104,44 @@
         right: 1rem;
     }
 }
+
+@media (width < 500px) {
+    .content {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .wrapper {
+        background: #f3e5cc;
+        border-block: 1px solid #ddc6a5;
+    }
+
+    .title {
+        align-self: flex-start;
+        margin-bottom: 1.5rem;
+    }
+
+    .wrapper_presentation_services {
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .subTitle {
+        width: 100%;
+        margin: 0;
+        padding: 1.25rem;
+        background: #fff7e8;
+        backdrop-filter: none;
+        border: 1px solid #ddc6a5;
+        border-radius: 16px;
+        box-shadow: none;
+        font-size: 1rem;
+    }
+
+    .translateButtonWrapper {
+        position: static;
+        display: flex;
+        justify-content: center;
+        padding: 1.5rem 1.25rem;
+    }
+}

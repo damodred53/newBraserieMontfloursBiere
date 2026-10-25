@@ -7,3 +7,24 @@
   background-size: cover;
 
 }
+
+@media (width < 500px) {
+  .wrapper {
+    position: relative;
+    isolation: isolate;
+    min-height: 100%;
+    background: none;
+  }
+
+  /* Fixed layer keeps the rays at screen scale on long pages, including iOS. */
+  .wrapper::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background:
+      linear-gradient(rgba(255, 247, 232, 0.4), rgba(255, 247, 232, 0.4)),
+      url("./assets/test7.png") center / cover no-repeat;
+    pointer-events: none;
+  }
+}

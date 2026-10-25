@@ -236,3 +236,37 @@
     font-size: 1.1rem;
   }
 }
+@media (width < 500px) {
+  .buttonBrown {
+    min-width: 0;
+    max-width: 100%;
+    min-height: 48px;
+    padding: 0.75rem 1rem;
+    border: 1px solid #74391e;
+    outline: none;
+    border-radius: 14px;
+    box-shadow: 0 3px 0 #74391e;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    white-space: normal;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+
+    &:focus-visible {
+      outline: 3px solid #3b2418;
+      outline-offset: 4px;
+    }
+  }
+
+  .buttonBrownAnimated:hover,
+  .buttonBrownAnimated:focus-visible {
+    --button-brown-lift-y: -2px;
+    --button-brown-scale: 1;
+    animation: none;
+    box-shadow: 0 5px 0 #74391e;
+  }
+}

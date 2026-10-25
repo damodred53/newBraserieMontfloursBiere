@@ -75,7 +75,33 @@
     }
 }
 
+@media (width < 500px) {
+    .history {
+        margin: 0;
+        padding: 2rem 1.25rem;
+        align-items: stretch;
+    }
 
+    .title,
+    .nomade,
+    .natureProgres,
+    .concurrence,
+    .irregulomadaire {
+        width: 100%;
+        margin-top: 2.5rem;
+    }
+
+    .title {
+        margin-top: 0;
+    }
+
+    .translateButtonWrapper {
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+}
 @media (max-width: 1024px) {
 
     .wrapper {

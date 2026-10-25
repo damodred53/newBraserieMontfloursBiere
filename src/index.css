@@ -28,3 +28,30 @@ a {
     color: inherit;
 }
 
+@media (width < 500px) {
+  html {
+    background: #fff7e8;
+  }
+
+  body {
+    color: #3b2418;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  :focus-visible {
+    outline: 3px solid #8a3218;
+    outline-offset: 4px;
+  }
+}

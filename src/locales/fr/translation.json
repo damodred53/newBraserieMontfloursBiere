@@ -64,6 +64,11 @@
     }
   },
   "history": {
+    "carousel": {
+      "previous": "Étape précédente",
+      "next": "Étape suivante",
+      "position": "Étape {{current}} sur {{total}}"
+    },
     "title": "La BAM en plus de mots",
     "texte": {
         "slide1" : "2009 - Les Origines : A Montflours, une bande de copains s’essaye au brassage amateur dans une cuisine.\n", 

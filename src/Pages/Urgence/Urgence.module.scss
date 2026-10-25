@@ -118,3 +118,50 @@
         right: 1.5rem;
     }
 }
+
+@media (width < 500px) {
+    .wrapper {
+        margin: 0;
+        padding: 2rem 1.25rem;
+        align-items: stretch;
+    }
+
+    .subtitle {
+        margin-top: 2.5rem;
+        text-align: left;
+        font: 700 1.5rem / 1.25 Georgia, "Times New Roman", serif;
+    }
+
+    .mapWrapper {
+        margin-top: 1.5rem;
+        gap: 1.5rem;
+        min-width: 0;
+    }
+
+    .contactWrapper {
+        order: -1;
+        gap: 1rem;
+    }
+
+    .text {
+        margin: 0;
+        font: inherit;
+    }
+
+    .googlemap_frame {
+        height: 300px;
+        border: 1px solid #c8a575;
+        border-radius: 16px;
+        box-shadow: none;
+    }
+
+    .translateButtonWrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .translateButton {
+        position: static;
+    }
+}

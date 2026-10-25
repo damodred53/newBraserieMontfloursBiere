@@ -74,3 +74,35 @@
     color: #888;
     padding: 0.75rem 1rem 0.5rem;
 }
+
+@media (width < 500px) {
+    .paper {
+        width: calc(100% - 2rem);
+        margin: 4rem 1rem 1rem !important;
+        max-height: calc(100dvh - 5rem);
+        overflow-y: auto !important;
+        background: #fff7e8;
+        border: 1px solid #c8a575;
+    }
+
+    .logoContainer {
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .image {
+        position: static;
+        width: 72px;
+        height: 80px;
+        object-fit: contain;
+    }
+
+    .title {
+        font-family: Georgia, "Times New Roman", serif;
+        color: #3b2418;
+    }
+
+    .buttonYes {
+        background: #a83d1d !important;
+    }
+}

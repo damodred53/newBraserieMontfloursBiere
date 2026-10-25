@@ -166,8 +166,55 @@
 
   .translateButton {
     top: 35%;
-    right:15%;
+    right: 15%;
     left: auto;
     width: 1rem;
+  }
+}
+
+@media (width < 500px) {
+  .landingPage {
+    height: auto;
+    min-height: 100svh;
+    overflow: visible;
+    display: grid;
+    padding: 1.25rem 1.25rem 2rem;
+    background: #efbd51 url("../../assets/test7.png") center / cover;
+  }
+
+  .image {
+    width: min(100%, 320px);
+    height: auto;
+    margin: 0 auto 0.5rem;
+  }
+
+  .stage {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.875rem;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    aspect-ratio: auto;
+  }
+
+  .button {
+    position: static;
+    --button-brown-base-translate-x: 0px;
+    width: 100%;
+  }
+
+  .buttonUrgent,
+  .buttonDetails {
+    background: #fff7e8;
+    color: #3b2418;
+  }
+
+  .translateButton {
+    position: static;
+    align-self: center;
+    width: auto;
+    margin-top: 0.5rem;
   }
 }

@@ -55,12 +55,14 @@ const ContactBam = ({ className, isTelephoneNumber }: ContactBamProps) => {
             
             <div className={styles.content}>
 
-                <button className={styles.toggle} type="button" onClick={handleDisplayData}>
+                <button className={styles.toggle} type="button" onClick={handleDisplayData} aria-expanded={isDisplayed}>
                     {isDisplayed ? <img className={styles.logo} src={Masque} alt="masquer" /> : <p className={styles.text}>{t("urgence.clickToSee")}</p>}
                 </button>
 
                 <div>
-                    {isDisplayed && callOrEmail()}
+                    <div className={`${styles.details} ${isDisplayed ? styles.detailsOpen : ""}`}>
+                        {callOrEmail()}
+                    </div>
                 </div>
                 
             </div>

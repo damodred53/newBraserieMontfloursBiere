@@ -50,3 +50,12 @@
         margin-left: 2rem;
     }
 }
+
+@media (width < 500px) {
+    .mentions {
+        width: 100%;
+        margin: 0;
+        padding: 2rem 1.25rem;
+        overflow-wrap: anywhere;
+    }
+}

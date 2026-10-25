@@ -14,3 +14,20 @@
     font-family: "Comic Sans MS", "Trebuchet MS", sans-serif;
     font-style: italic;
 }
+
+@media (width < 500px) {
+    .title {
+        margin: 0 0 0.75rem;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 1.875rem;
+        line-height: 1.2;
+        font-style: normal;
+        color: #3b2418;
+        overflow-wrap: anywhere;
+    }
+
+    .subTitle {
+        font: inherit;
+        color: #70523a;
+    }
+}

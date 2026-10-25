@@ -12,12 +12,16 @@ type InnerCarouselProps = {
 const InnerCarousel = ({ date, title, text }: InnerCarouselProps) => {
 
   const { t } = useTranslation();
+  const translatedText = t(text);
+  const isShort = translatedText.length <= 160;
   
   return (
-    <div className={styles.wrapper}>
+    <div className={`${styles.wrapper} ${isShort ? styles.short : ""}`}>
         <div className={styles.date}><Badge number={date} /></div>
-        <h2 className={styles.title}>{t(title)}</h2>
-        <p className={styles.text}>{t(text)}</p>
+        <div className={styles.content}>
+          <h2 className={styles.title}>{t(title)}</h2>
+          <p className={styles.text}>{translatedText}</p>
+        </div>
     </div>
     );  
 };

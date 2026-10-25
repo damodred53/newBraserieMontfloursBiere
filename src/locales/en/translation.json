@@ -69,6 +69,11 @@
     }
   },
   "history": {
+    "carousel": {
+      "previous": "Previous milestone",
+      "next": "Next milestone",
+      "position": "Milestone {{current}} of {{total}}"
+    },
     "title": "The BAM Story in a Few Words",
     "texte": {
         "slide1" : "2009 - The Origins: In Montflours, a group of friends tries their hand at home brewing in a kitchen.\n", 

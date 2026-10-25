@@ -107,3 +107,57 @@
         font-size: 1.1rem;
     }
 }
+
+.details {
+    display: none;
+}
+
+.detailsOpen {
+    display: block;
+}
+
+@media (width < 500px) {
+    .contactBam {
+        gap: 0.75rem;
+        padding: 1rem;
+        border: 1px solid #ddc6a5;
+        border-radius: 16px;
+        background: #fffdf6;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .details,
+    .content {
+        display: block;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .logo {
+        width: 28px;
+        height: 28px;
+    }
+
+    .text,
+    .link {
+        margin: 0;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        font: inherit;
+    }
+
+    .link {
+        min-height: 44px;
+        text-decoration: underline;
+        text-underline-offset: 0.2em;
+    }
+
+    .emailList {
+        padding: 0;
+        border: none;
+        gap: 1rem;
+    }
+}

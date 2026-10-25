@@ -124,3 +124,51 @@
     }
 }
 
+@media (width < 500px) {
+    .footer {
+        min-height: 0;
+        margin-top: 2rem;
+        padding: 2rem 1.25rem 3rem;
+        gap: 1.25rem;
+        background: #3b2418;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .container {
+        width: 100%;
+        order: 0;
+
+        p {
+            font-size: 0.875rem;
+            line-height: 1.6;
+        }
+    }
+
+    .logoContainer {
+        width: 100%;
+        gap: 1rem;
+
+        a {
+            display: grid;
+            place-items: center;
+            min-width: 44px;
+            min-height: 44px;
+        }
+    }
+
+    .logo {
+        order: 0;
+        margin: 0;
+    }
+
+    .legalLink {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        font-size: 0.875rem;
+        text-decoration: underline;
+    }
+}

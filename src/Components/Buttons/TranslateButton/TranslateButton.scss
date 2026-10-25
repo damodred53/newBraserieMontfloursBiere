@@ -80,3 +80,23 @@
   }
 
 }
+
+@media (width < 500px) {
+  .button-translate {
+    min-height: 44px;
+    padding: 0.625rem 1rem;
+    border: 1px solid #c8a575;
+    background: #fff7e8;
+    box-shadow: none;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .button-translate__label {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 0.875rem;
+    text-shadow: none;
+  }
+}
